@@ -1,39 +1,448 @@
-// ========== Stage 1 Data ==========
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      background: #F3F7FA;
+      font-family: 'Cairo', Tahoma, Arial, sans-serif;
+      color: #212121;
+      margin: 0;
+      padding: 0;
+    }
+    .main-container {
+      max-width: 540px;
+      margin: 40px auto 24px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 24px #c1c1c1;
+      padding: 30px 22px 22px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #0B6DC4;
+    }
+    .progress-bar {
+      width: 100%;
+      height: 14px;
+      background: #e9eef2;
+      border-radius: 8px;
+      margin-bottom: 18px;
+      overflow: hidden;
+    }
+    .progress-bar-inner {
+      height: 100%;
+      background: linear-gradient(90deg, #0B6DC4, #00939B 70%);
+      width: 0%;
+      transition: width 0.4s;
+    }
+    .question {
+      margin: 18px 0 10px;
+      font-size: 1.2em;
+      min-height: 50px;
+      text-align: right;
+    }
+    .note {
+      background: #ffeeb2;
+      color: #8a6d00;
+      font-size: 1em;
+      border-radius: 7px;
+      padding: 7px 11px;
+      margin-bottom: 16px;
+      margin-top: 3px;
+      display: inline-block;
+    }
+    .option {
+      background: #F2F7FB;
+      border: 1px solid #d7e7ef;
+      border-radius: 12px;
+      margin-bottom: 14px;
+      padding: 15px 18px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background .2s, border .2s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .option.selected {
+      background: #e1f3fb;
+      border: 1.5px solid #0B6DC4;
+    }
+    .answers-bar {
+      display: flex;
+      gap: 10px;
+      margin: 18px 0 0;
+    }
+    .answers-bar button {
+      flex: 1;
+      padding: 10px;
+      font-size: 1em;
+      border-radius: 8px;
+      border: none;
+      background: #e9eef2;
+      color: #222;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .answers-bar button.selected,
+    .answers-bar button:active {
+      background: #0B6DC4;
+      color: #fff;
+      font-weight: bold;
+    }
+    .btn-main {
+      background: linear-gradient(90deg, #0B6DC4 70%, #00939B);
+      color: #fff;
+      border: none;
+      padding: 13px 28px;
+      font-size: 1.05em;
+      border-radius: 8px;
+      margin: 20px 0 10px;
+      cursor: pointer;
+      display: block;
+      width: 100%;
+    }
+    .btn-main:disabled {
+      background: #a4c7dd;
+      cursor: not-allowed;
+    }
+    .btn-secondary {
+      background: #eee;
+      color: #222;
+      border: none;
+      padding: 11px 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      margin-top: 6px;
+      cursor: pointer;
+    }
+    .result-section {
+      text-align: right;
+      margin: 20px 0;
+      background: #F2F7FB;
+      border: 1.5px solid #e9eef2;
+      border-radius: 16px;
+      padding: 18px 22px;
+      /* display:flex; */
+      /* flex-direction: column; */
+      /* width: 100%; */
+    }
+    @media (max-width: 700px) {
+      .result-section {
+        padding: 18px 0px;
+      }
+    }
+    .result-section strong {
+      color: #0B6DC4;
+    }
+    .share-btns {
+      margin: 18px 0;
+      text-align: center;
+    }
+    .share-btns button {
+      margin: 0 8px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: none;
+      background: #0B6DC4;
+      color: #fff;
+      cursor: pointer;
+    }
+    @media (max-width: 700px) {
+      .main-container {
+        margin: 12px 3px;
+        padding: 13px 4px 14px;
+      }
+      .question {
+        font-size: 1.05em;
+      }
+      .option {
+        font-size: 1em;
+      }
+    }
+    .main-question {
+      font-size: 1.6em;
+      color: #0B6DC4;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 16px;
+  text-align: right;
+    }
+
+    .stage-label {
+      font-size: 1.05em;
+      color: #7a8ba6;
+      margin-bottom: 18px;
+      margin-top: 0px;
+  text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="progress-bar">
+      <div class="progress-bar-inner" id="progressBar"></div>
+    </div>
+    <div id="quizContent"></div>
+    <button class="btn-secondary" style="display:none" id="backBtn" onclick="goBack()">رجوع</button>
+  </div>
+
+  <!-- Study Calculator Section (initially hidden) -->
+  <div id="studyCalculatorSection" style="display: none;">
+    <style>
+      #study-calculator {
+        max-width: 640px;
+        margin: 2.5em auto;
+        padding: 2.5em 2em 2em 2em;
+        border: 1.5px solid #E9ECEF;
+        border-radius: 16px;
+      font-family: "Cairo", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #F7F9FB;
+        box-shadow: 0 6px 32px rgba(29,53,87,0.08);
+        position: relative;
+      }
+      #currencyBox {
+        position: absolute;
+        top: 22px;
+        right: 28px;
+        font-size: 0.93em;
+        z-index: 5;
+        background: #F7F9FB;
+        padding: 0.2em 0.8em;
+        border-radius: 7px;
+        border: 1px solid #E9ECEF;
+        display: flex;
+        align-items: center;
+        gap: 0.3em;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+      }
+      #currencyBox label {
+        font-weight: 600;
+        color: #457B9D;
+        font-size: 0.95em;
+        margin-bottom: 0;
+      }
+      #currencySelect {
+        border-radius: 5px;
+        border: 1px solid #BFC8D6;
+        padding: 0.18em 0.9em 0.18em 0.6em;
+        font-size: 0.93em;
+        background: #fff;
+        color: #1D3557;
+        margin-left: 0.2em;
+        margin-bottom: 0;
+      }
+      #liveRate {
+        color: #B7B7B7;
+        font-size: 0.86em;
+        margin-right: 0.8em;
+        margin-left: 0.2em;
+        margin-bottom: 0;
+      }
+      #study-calculator label {
+        margin-bottom: .5em;
+        font-weight: 700;
+        color: #1D3557;
+        display: block;
+        font-size: 1.09em;
+      }
+      #study-calculator select, #study-calculator input[type="text"] {
+        width: 100%;
+        padding: .8em;
+        margin-bottom: 1.2em;
+        border: 1.2px solid #BFC8D6;
+        border-radius: 6px;
+        font-size: 1em;
+        background: #fff;
+        transition: border 0.2s;
+      }
+      #study-calculator select:focus {
+        border-color: #457B9D;
+        outline: none;
+        background: #F7F9FB;
+      }
+      #study-calculator button {
+        padding: 1em 2em;
+        font-size: 1.13em;
+        font-weight: 800;
+        color: #fff;
+        background: linear-gradient(90deg,#1D3557 40%,#457B9D 100%);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 2px 12px rgba(69,123,157,0.07);
+        transition: background 0.2s, box-shadow 0.2s;
+        margin-top: 1em;
+        opacity: 0.6;
+      }
+      #study-calculator button:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+      #study-calculator button:enabled {
+        opacity: 1;
+        cursor: pointer;
+      }
+      .note {
+        margin-top: 1em;
+        padding: 1em;
+        background: #E9ECEF;
+        color: #1D3557;
+        border: 1.2px solid #BFC8D6;
+        border-radius: 7px;
+        font-size: 1em;
+        line-height: 1.7;
+        display: none;
+      }
+      #notAvailableNote {
+        color:#B63C3C;
+        border-color:#F8D7DA;
+        background:#F8D7DA;
+        display:none;
+      }
+      #costDisplay {
+        margin-top: 1em;
+        line-height: 1.7;
+        background: #F7F9FB;
+        border-radius: 6px;
+        border: 1px solid #BFC8D6;
+        padding: 0.8em 1.2em;
+        box-shadow: 0 2px 8px rgba(69,123,157,0.08);
+      }
+      #costDisplay span {
+        display: block;
+        color: #1D3557;
+        font-weight: 700;
+        font-size: 1.08em;
+      }
+      @media (max-width: 700px) {
+        #currencyBox { position: static; margin-bottom: 1em; }
+      }
+    </style>
+
+    <div id="study-calculator">
+      <div id="currencyBox">
+        <label for="currencySelect">Currency:</label>
+        <select id="currencySelect">
+          <option value="GBP">GBP</option>
+          <option value="SAR">SAR</option>
+          <option value="AED">AED</option>
+          <option value="IQD">IQD</option>
+          <option value="JOD">JOD</option>
+          <option value="KWD">KWD</option>
+          <option value="QAR">QAR</option>
+          <option value="BHD">BHD</option>
+        </select>
+        <span id="liveRate"></span>
+  </div>
+      <div style="height:42px"></div><!-- margin between currency and form -->
+      <form id="registrationForm" action="" method="GET" target="_blank">
+        <label for="degree">Program:</label>
+        <select id="degree" name="degree" required>
+          <option value="">— Select —</option>
+          <option value="bachelor">Bachelor</option>
+          <option value="baccalaureate">Baccalaureate</option>
+        </select>
+        <!-- Baccalaureate Fields -->
+        <div id="specSection" style="display:none;">
+          <label for="specialty">Baccalaureate Major:</label>
+          <select id="specialty" name="specialty">
+            <option value="">— Select —</option>
+            <option value="engineering">Engineering Sciences</option>
+            <option value="publicHealth">Public Health</option>
+            <option value="business">Business</option>
+            <option value="artDesign">Art & Design</option>
+            <option value="law">Law</option>
+          </select>
+          <div id="phNote" class="note">
+            Note: Public Health baccalaureate is considered as a substitute for the first preparatory year for medical specializations.
+          </div>
+        </div>
+        <!-- Bachelor Fields -->
+        <div id="yearsSection" style="display:none;">
+          <label for="firstYears">First & Second Year:</label>
+          <select id="firstYears" name="firstYears">
+            <option value="">— Select —</option>
+            <option value="onsite">Onsite in the UK</option>
+            <option value="online">Online</option>
+          </select>
+          <label for="thirdYear">Third Year:</label>
+          <select id="thirdYear" name="thirdYear">
+            <option value="">— Select —</option>
+            <option value="onsite">Onsite in the UK</option>
+            <option value="online">Online</option>
+          </select>
+          <label for="ranking">University Ranking:</label>
+          <select id="ranking" name="ranking">
+            <option value="top20">Top 20 Universities (QS Rank)</option>
+            <option value="top100">Top 100 Universities (QS Rank)</option>
+            <option value="top200" selected>Top 200 Universities (QS Rank)</option>
+          </select>
+          <div id="cambridgeNote" class="note">
+            You can study the first two years online at Cambridge University for an extra £15,000 (not mandatory).
+          </div>
+          <div id="onsiteNote" class="note">
+            Studying the first two years online is possible via Cambridge or Pearson, then you can complete the third year in the UK and receive the same final degree.
+          </div>
+          <div id="notAvailableNote" class="note">
+            Studying the third year online at Top 20 universities is NOT available.
+          </div>
+        </div>
+        <!-- Cost Section -->
+        <div id="costDisplay" style="display:none;">
+          <span id="costFirstTwo">—</span>
+          <span id="costThird">—</span>
+        </div>
+        <button type="submit" disabled>Submit Application</button>
+      </form>
+      <!-- General Notes -->
+      <div id="generalNotes" class="note">
+        <p id="projNote" style="display:none;">Study is based on projects, not exams for online students.</p>
+        <p>An accredited university in your country will be selected before registration.</p>
+      </div>
+    </div>
+
+  </div>
+
+<script>
+// ========== بيانات المرحلة الأولى ==========
 const mainOptions = [
-  {id:"creative_art", label:"I love creating visual ideas, drawing, design, and artistic expression with my own colors.", emoji:"🎨", field:"Art & Design"},
-  {id:"creative_media", label:"I enjoy producing videos, creating content, or working behind the camera or in media.", emoji:"🎬", field:"Creative Media"},
-  {id:"business", label:"I love analyzing numbers, understanding markets, and managing money or developing companies.", emoji:"📈", field:"Business Management"},
-  {id:"digital_tech", label:"I am passionate about technology, programming, and using artificial intelligence or cybersecurity.", emoji:"💻", field:"Digital Technologies"},
-  {id:"it_engineer", label:"I enjoy solving technical problems, building systems, and maintaining devices.", emoji:"🔧", field:"Information Technology"},
-  {id:"engineering", label:"I love learning how things are built and designing engineering solutions.", emoji:"⚙️", field:"Engineering"},
-  {id:"construction", label:"I am interested in construction, urban planning, architecture, and building-related services.", emoji:"🏗️", field:"Construction Engineering"},
-  {id:"travel_tourism", label:"I love planning events, traveling, managing trips, and cultural experiences.", emoji:"🧳", field:"Travel & Tourism"},
-  {id:"health_social", label:"I find myself supporting people, improving their health, or providing community care.", emoji:"💖", field:"Health & Social Care"},
-  {id:"esports", label:"I aspire to be a team leader in esports or support players.", emoji:"🎮", field:"Esports"},
-  {id:"hospitality", label:"I enjoy customer service, hotel management, and organizing unique hospitality experiences.", emoji:"🏨", field:"Hospitality Management"},
+  {id:"creative_art", label:"أحب ابتكار الأفكار البصرية، الرسم، التصميم، والتعبير الفني بألواني الخاصة.", emoji:"🎨", field:"Art & Design"},
+  {id:"creative_media", label:"أجد متعة في إنتاج الفيديوهات، صناعة المحتوى، أو العمل خلف الكاميرا أو في الإعلام.", emoji:"🎬", field:"Creative Media"},
+  {id:"business", label:"أحب تحليل الأرقام، فهم الأسواق، وإدارة الأموال أو تطوير الشركات.", emoji:"📈", field:"Business Management"},
+  {id:"digital_tech", label:"لدي شغف بالتقنية، البرمجة، واستخدام الذكاء الاصطناعي أو الأمن السيبراني.", emoji:"💻", field:"Digital Technologies"},
+  {id:"it_engineer", label:"أستمتع بحل المشكلات التقنية، بناء الأنظمة، وصيانة الأجهزة.", emoji:"🔧", field:"Information Technology"},
+  {id:"engineering", label:"أحب معرفة كيف تُبنى الأشياء، وتصميم الحلول الهندسية.", emoji:"⚙️", field:"Engineering"},
+  {id:"construction", label:"أهتم بالبناء والتخطيط الحضري، والهندسة المعمارية والخدمات المرتبطة بالمباني.", emoji:"🏗️", field:"Construction Engineering"},
+  {id:"travel_tourism", label:"أحب التخطيط للفعاليات، السفر، إدارة الرحلات والتجارب الثقافية.", emoji:"🧳", field:"Travel & Tourism"},
+  {id:"health_social", label:"أجد نفسي في دعم الناس، تحسين صحتهم، أو تقديم الرعاية المجتمعية.", emoji:"💖", field:"Health & Social Care"},
+  {id:"esports", label:"أطمح أن أكون قائد فريق في مجال الألعاب الإلكترونية أو دعم اللاعبين.", emoji:"🎮", field:"Esports"},
+  {id:"hospitality", label:"أهوى خدمة الزبائن، إدارة الفنادق، وتنظيم تجارب ضيافة مميزة.", emoji:"🏨", field:"Hospitality Management"},
 ];
 
 const questionsP1 = [
-  "Which of these statements resembles you the most?",
-  "What best describes your future ambition?",
-  "The app you use most or like to use:",
-  "How do your friends talk about you?"
+  "أي من هذه العبارات تُشبهك أكثر؟",
+  "ما الذي يصف طموحك المستقبلي بشكل أفضل؟",
+  "أكثر تطبيق تستخدمه أو تحب أن تستخدمه:",
+  "كيف يتحدث عنك أصدقاؤك؟"
 ];
 
 const optionsTextsP1 = [
   mainOptions.map(opt => opt.label),
   [
-    "To become a visual artist or a world-class designer (🎨)",
-    "To establish a famous content channel (🎬)",
-    "To manage a successful project or work in a major company (📈)",
-    "To innovate advanced technical solutions (💻)",
-    "To be a programmer or smart systems engineer (🔧)",
-    "To make a difference in industry or manufacturing (⚙️)",
-    "To build smart cities or beautiful homes (🏗️)",
-    "To be a global travel organizer (🧳)",
-    "To help people in their daily lives (💖)",
-    "To compete in global gaming tournaments (🎮)",
-    "To manage a luxury hotel or tourist resort (🏨)"
+    "أن أصبح فنانًا بصريًا أو مصممًا عالميًا (🎨)",
+    "أن أؤسس قناة محتوى مشهورة (🎬)",
+    "أن أُدير مشروعًا ناجحًا أو أعمل في شركة كبرى (📈)",
+    "أن أبتكر حلولًا تقنية متقدمة (💻)",
+    "أن أكون مبرمجًا أو مهندس أنظمة ذكية (🔧)",
+    "أن أُحدث فرقًا في الصناعة أو التصنيع (⚙️)",
+    "أن أبني مدنًا ذكية أو مساكن جميلة (🏗️)",
+    "أن أكون منظم رحلات عالمية (🧳)",
+    "أن أساعد الناس في حياتهم اليومية (💖)",
+    "أن أتنافس في بطولات عالمية للألعاب (🎮)",
+    "أن أُدير فندقًا فاخرًا أو منتجعًا سياحيًا (🏨)"
   ],
   [
     "Canva / Procreate (🎨)",
@@ -49,144 +458,144 @@ const optionsTextsP1 = [
     "Booking / Trivago / Yelp (🏨)"
   ],
   [
-    "Artistic and creative (🎨)",
-    "Funny and loves documentation (🎬)",
-    "Rational and organized (📈)",
-    "Tech-obsessed (💻)",
-    "Obsessed with electronics and experimentation (🔧)",
-    "Loves tools and industry (⚙️)",
-    "Very organized and precise (🏗️)",
-    "Adventurous and loves to travel (🧳)",
-    "Kind-hearted and loves to help (💖)",
-    "Competitive and loves challenges (🎮)",
-    "Hospitable and cares about details (🏨)"
+    "فني ومبدع (🎨)",
+    "مضحك ويحب التوثيق (🎬)",
+    "عقلاني ومنظم (📈)",
+    "مهووس بالتقنية (💻)",
+    "مهووس بالإلكترونيات والتجريب (🔧)",
+    "يحب الأدوات والصناعة (⚙️)",
+    "منظم جدًا ودقيق (🏗️)",
+    "مغامر ويحب التنقل (🧳)",
+    "طيب القلب ويحب المساعدة (💖)",
+    "منافس ومحب للتحدي (🎮)",
+    "مضياف ويهتم بالتفاصيل (🏨)"
   ]
 ];
 
-// ========== Stage 2 Data ==========
+// ========== بيانات المرحلة الثانية ==========
     const subFieldsData = {
       "Art & Design": {
-        question: "Which of these activities expresses you the most and resembles your way of expression or creativity? (Choose only one)",
+        question: "أي من هذه الأنشطة يعبّر عنك أكثر ويُشبه طريقتك في التعبير أو الإبداع؟ (اختر واحدة فقط)",
         options: [
-          { label:"I love creating shapes for tools and products used in daily life — like smart devices or practical furniture pieces.", field:"Product Design" },
-          { label:"I enjoy designing interior spaces for homes or offices, coordinating colors and furniture.", field:"Interior Design" },
-          { label:"I am passionate about fashion and designing modern or traditional clothes artistically.", field:"Fashion" },
-          { label:"I love designing patterns, fabrics, and various textiles, and imagine printing them on clothes or furnishings.", field:"Textiles" },
-          { label:"I enjoy taking photos and documenting moments with artistic shots that express emotions.", field:"Photography" },
-          { label:"I excel at drawing logos, posters, and designing visual elements for brands.", field:"Graphic Design" },
-          { label:"I enjoy designing app and website interfaces or interactive digital content.", field:"Digital Design" },
-          { label:"I love drawing, coloring, and creating free artworks with strong messages.", field:"Arts Practice" },
-          { label:"I have ideas for designing unique shoes that combine beauty, comfort, and innovation.", field:"Footwear Design" },
+          { label:"أحب ابتكار أشكال لأدوات ومنتجات تُستخدم في الحياة اليومية — مثل الأدوات الذكية أو قطع الأثاث العملية.", field:"Product Design" },
+          { label:"أستمتع بتصميم المساحات الداخلية للمنازل أو المكاتب، وتنسيق الألوان والأثاث.", field:"Interior Design" },
+          { label:"لدي شغف بالأزياء وتصميم الملابس العصرية أو التراثية بطريقة فنية.", field:"Fashion" },
+          { label:"أحب تصميم النقوش والأقمشة والأنسجة المتنوعة، وأتخيل طباعتها على الملابس أو المفروشات.", field:"Textiles" },
+          { label:"أجد متعة في التقاط الصور وتوثيق اللحظات بلقطات فنية تعبر عن المشاعر.", field:"Photography" },
+          { label:"أبرع في رسم الشعارات، الملصقات، وتصميم العناصر البصرية للعلامات التجارية.", field:"Graphic Design" },
+          { label:"أستمتع بتصميم واجهات التطبيقات والمواقع أو المحتوى التفاعلي الرقمي.", field:"Digital Design" },
+          { label:"أحب الرسم والتلوين وصناعة أعمال فنية حرة تحمل رسائل قوية.", field:"Arts Practice" },
+          { label:"لدي أفكار لتصميم أحذية فريدة تجمع بين الجمال والراحة والابتكار.", field:"Footwear Design" },
         ]
       },
       "Creative Media": {
-        question:"Which of these activities or fields in media and creative production resembles you the most? (Choose only one)",
+        question:"أي من هذه الأنشطة أو المجالات في الإعلام والإنتاج الإبداعي يُشبهك أكثر؟ (اختر واحدة فقط)",
         options:[
-          { label:"I love working in sound recording, producing sound effects, or improving sound quality.", field:"Sound Media" },
-          { label:"I am passionate about film directing, shooting movies, and writing scripts.", field:"Film" },
-          { label:"I enjoy working in television, whether behind the camera or on screen.", field:"Television" },
-          { label:"I enjoy writing articles, preparing press reports, or engaging with public opinion issues.", field:"Journalism" },
-          { label:"I am excited by producing imaginary visual scenes like explosions or virtual characters.", field:"Visual Effects" },
-          { label:"I love designing video games, whether at the idea, graphics, or programming level.", field:"Game Development" },
-          { label:"I excel at animating visual elements and creating short videos using animation.", field:"Motion Graphic" },
-          { label:"I am passionate about artistic photography and documenting moments through the camera lens.", field:"Media Photography" },
+          { label:"أحب العمل في تسجيل الأصوات، إنتاج المؤثرات الصوتية، أو تحسين جودة الصوت.", field:"Sound Media" },
+          { label:"أجد شغفًا في الإخراج السينمائي، تصوير الأفلام، وكتابة السيناريوهات.", field:"Film" },
+          { label:"أهوى العمل في مجال التلفزيون، سواء خلف الكاميرا أو على الشاشة.", field:"Television" },
+          { label:"أستمتع بكتابة المقالات، إعداد التقارير الصحفية، أو التفاعل مع قضايا الرأي العام.", field:"Journalism" },
+          { label:"يثيرني إنتاج مشاهد بصرية خيالية مثل الانفجارات أو الشخصيات الافتراضية.", field:"Visual Effects" },
+          { label:"أحب تصميم ألعاب الفيديو، سواء على مستوى الفكرة أو الرسومات أو البرمجة.", field:"Game Development" },
+          { label:"أبرع في تحريك العناصر البصرية وإنشاء فيديوهات قصيرة باستخدام الرسوم المتحركة.", field:"Motion Graphic" },
+          { label:"لدي شغف بالتصوير الفني وتوثيق اللحظات بعدسة الكاميرا.", field:"Media Photography" },
         ]
       },
       "Business Management": {
-        question:"Which of these activities or skills resembles you the most and reflects your way of thinking or interests in daily life? (Choose only one)",
+        question:"أي من هذه الأنشطة أو المهارات تُشبهك أكثر وتشعر أنها تعكس طريقة تفكيرك أو اهتماماتك في الحياة اليومية؟ (اختر واحدة فقط)",
         options:[
-          { label:"I enjoy analyzing numbers, preparing budgets, and reviewing financial reports with precision.", field:"Accounting & Finance" },
-          { label:"I love planning long-term strategies, managing teams, and thinking about a comprehensive vision for the organization.", field:"Business Management" },
-          { label:"I am passionate about launching new ideas, starting projects from scratch, and taking risks for success.", field:"Entrepreneurship & Small Business Management" },
-          { label:"I find myself dealing with people, solving their problems in the workplace, and motivating them to perform better.", field:"Human Resource Management" },
-          { label:"I love creating innovative marketing campaigns, understanding consumer behavior, and persuading people in an attractive way.", field:"Marketing" },
-          { label:"I enjoy negotiating, managing the supply chain, and ensuring materials and services are available on time.", field:"Procurement & Supply Management" },
-          { label:"I am curious about understanding laws, managing relationships between individuals or companies, and defending rights clearly.", field:"Law" }
+          { label:"أستمتع بتحليل الأرقام، إعداد الميزانيات، ومراجعة التقارير المالية بدقة.", field:"Accounting & Finance" },
+          { label:"أحب وضع الخطط طويلة المدى، تنظيم فرق العمل، والتفكير في رؤية شاملة للمؤسسة.", field:"Business Management" },
+          { label:"لدي شغف بإطلاق أفكار جديدة، تأسيس مشاريع من الصفر، وتحمّل المخاطر من أجل النجاح.", field:"Entrepreneurship & Small Business Management" },
+          { label:"أجد نفسي في التعامل مع الأشخاص، حل مشاكلهم داخل بيئة العمل، وتحفيزهم على الأداء الأفضل.", field:"Human Resource Management" },
+          { label:"أحب إنشاء حملات إعلانية مبتكرة، وفهم سلوك المستهلك وإقناعه بطريقة جذابة.", field:"Marketing" },
+          { label:"أستمتع بالتفاوض، إدارة سلسلة التوريد، وضمان توفير المواد والخدمات في الوقت المناسب.", field:"Procurement & Supply Management" },
+          { label:"لدي فضول لفهم القوانين، تنظيم العلاقات بين الأفراد أو الشركات، والدفاع عن الحقوق بوضوح.", field:"Law" }
         ]
       },
       "Digital Technologies": {
-        question:"Which of these digital fields catches your attention and you want to excel in? (Choose only one)",
+        question:"أي من هذه المجالات الرقمية يلفت انتباهك وتشعر أنك ترغب في التميز فيه؟ (اختر واحدة فقط)",
         options:[
-          { label:"I am interested in understanding cloud infrastructure and developing smart and efficient storage solutions.", field:"Cloud Networking" },
-          { label:"I enjoy analyzing large amounts of data to achieve intelligent results that help in decision-making.", field:"Data Analytics" },
-          { label:"I am passionate about securing systems against attacks and protecting sensitive information.", field:"Cyber Security" },
-          { label:"I find artificial intelligence amazing, and I love designing smart applications that learn and interact intelligently.", field:"Artificial Intelligence (AI) Solutions and Applications" },
-          { label:"I enjoy managing digital content, interacting with clients professionally through digital means.", field:"Digital Communications Management" },
-          { label:"I excel at using technology to support decision-making within organizations, achieving organizational change.", field:"Business Analytics and Change Management" },
-          { label:"I love programming applications, designing comprehensive software solutions to solve user problems.", field:"Software Development and Programming" },
+          { label:"يهمني فهم البنية التحتية السحابية وتطوير حلول تخزين ذكية وفعالة.", field:"Cloud Networking" },
+          { label:"أستمتع بتحليل كميات ضخمة من البيانات للوصول إلى نتائج ذكية تساعد في اتخاذ القرار.", field:"Data Analytics" },
+          { label:"لدي شغف بتأمين الأنظمة ضد الهجمات وحماية المعلومات الحساسة.", field:"Cyber Security" },
+          { label:"أجد الذكاء الاصطناعي مذهلًا، وأحب تصميم تطبيقات تتعلم وتتفاعل بذكاء.", field:"Artificial Intelligence (AI) Solutions and Applications" },
+          { label:"أهوى إدارة المحتوى الرقمي، والتفاعل مع العملاء عبر الوسائط الرقمية باحترافية.", field:"Digital Communications Management" },
+          { label:"أبرع في استخدام التكنولوجيا لدعم اتخاذ القرار داخل المؤسسات، وتحقيق التغيير التنظيمي.", field:"Business Analytics and Change Management" },
+          { label:"أحب برمجة التطبيقات، وتصميم حلول برمجية متكاملة لمعالجة مشاكل المستخدمين.", field:"Software Development and Programming" },
         ]
       },
       "Information Technology": {
-        question:"Which of these technical aspects interests you the most and you feel you excel in or want to learn? (Choose only one)",
+        question:"أي من هذه الجوانب التقنية يثير اهتمامك أكثر وتشعر أنك تبرع فيه أو ترغب بتعلّمه؟ (اختر واحدة فقط)",
         options:[
-          { label:"I love working with computers in general, learning basic programming, and troubleshooting operating system issues.", field:"General Computing" },
-          { label:"I enjoy building complex software and designing software systems that work efficiently.", field:"Software Engineering" },
-          { label:"I enjoy testing applications, discovering software bugs, and improving performance.", field:"Applications Development & Testing" },
-          { label:"I love analyzing data to understand trends and make data-driven decisions.", field:"Data Analytics" },
-          { label:"I am excited about building networks, managing communication between systems, and ensuring internet works smoothly.", field:"Network Engineering" },
-          { label:"I am curious about discovering vulnerabilities, protecting systems from attacks, and securing digital information.", field:"Cyber Security" },
+          { label:"أحب التعامل مع الحواسيب بشكل عام، وتعلم أساسيات البرمجة وحل مشاكل التشغيل.", field:"General Computing" },
+          { label:"أستمتع ببناء برامج معقدة وتصميم أنظمة برمجية تشتغل بكفاءة عالية.", field:"Software Engineering" },
+          { label:"أجد متعة في تجربة التطبيقات واكتشاف الأخطاء البرمجية وتحسين الأداء.", field:"Applications Development & Testing" },
+          { label:"أحب تحليل البيانات لفهم الاتجاهات، واتخاذ قرارات قائمة على الأرقام.", field:"Data Analytics" },
+          { label:"يثيرني بناء الشبكات، إدارة الاتصال بين الأنظمة، وضمان عمل الإنترنت بسلاسة.", field:"Network Engineering" },
+          { label:"لدي فضول لاكتشاف الثغرات، حماية الأنظمة من الهجمات، وتأمين المعلومات الرقمية.", field:"Cyber Security" },
         ]
       },
       "Engineering": {
-        question:"Which of these engineering fields resembles your way of thinking or catches your attention in the world around you? (Choose only one)",
+        question:"أي من هذه المجالات الهندسية يُشبه طريقة تفكيرك أو ما يلفت انتباهك في العالم من حولك؟ (اختر واحدة فقط)",
         options:[
-          { label:"I love the overall design of systems and solving multi-disciplinary problems comprehensively.", field:"General Engineering" },
-          { label:"I am passionate about developing tools and equipment used in production lines and factories.", field:"Manufacturing Engineering" },
-          { label:"I am interested in integrating electronics with mechanics to create smart and automated systems.", field:"Mechatronics" },
-          { label:"I enjoy understanding how engines and moving parts work and developing precise machines.", field:"Mechanical" },
-          { label:"I am interested in improving efficiency in production environments and analyzing production process flows.", field:"Operations Engineering" },
-          { label:"I am interested in high-tech manufacturing, materials science, and semiconductors.", field:"Semiconductor Technologies" },
-          { label:"I love designing integrated circuits used in smart devices or medical technology.", field:"Embedded Electronic Systems" },
-          { label:"I love designing electrical and electronic circuits and solving power and control issues.", field:"Electrical & Electronic Engineering" }
+          { label:"أحب النظرة العامة لتصميم الأنظمة وحل المشكلات متعددة التخصصات بطريقة شاملة.", field:"General Engineering" },
+          { label:"أجد شغفًا بتطوير أدوات ومعدات تُستخدم في خطوط الإنتاج والمصانع.", field:"Manufacturing Engineering" },
+          { label:"يهمني دمج الإلكترونيات مع الميكانيكا لإنشاء أنظمة ذكية وذاتية الحركة.", field:"Mechatronics" },
+          { label:"أستمتع بفهم آلية عمل المحركات والأجزاء المتحركة وتطوير آلات دقيقة.", field:"Mechanical" },
+          { label:"لدي رغبة في تحسين الكفاءة في بيئات الإنتاج وتحليل تدفق العمليات الصناعية.", field:"Operations Engineering" },
+          { label:"أجد نفسي مهتمًا بالتصنيع عالي التقنية وعلوم المواد وأشباه الموصلات.", field:"Semiconductor Technologies" },
+          { label:"أحب تطوير أنظمة مدمجة صغيرة تُستخدم في الأجهزة الذكية أو التقنية الطبية.", field:"Embedded Electronic Systems" },
+          { label:"أحب تصميم الدوائر الكهربائية والإلكترونية وحل مشاكل الطاقة والتحكم.", field:"Electrical & Electronic Engineering" }
         ]
       },
       "Construction Engineering": {
-        question:"Which of these activities or roles in construction and urban development resembles you and makes you excited? (Choose only one)",
+        question:"أي من هذه الأنشطة أو الأدوار في مشاريع البناء والعمران تُشبهك وتشعرك بالحماس؟ (اختر واحدة فقط)",
         options:[
-          { label:"I love designing buildings, planning spaces, and following construction details from the beginning.", field:"Civil Engineering" },
-          { label:"I am passionate about managing construction sites, ensuring the project is executed according to budget and schedule.", field:"Construction Management" },
-          { label:"I enjoy architectural drawing and transforming ideas into 3D designs that show construction details.", field:"Architectural Technology" },
-          { label:"I enjoy planning HVAC systems and ensuring comfortable environments inside buildings.", field:"Building Services Engineering – HVAC" },
-          { label:"I love dealing with electrical systems inside buildings, such as lighting and safe wiring.", field:"Building Services Engineering – Electrical" },
-          { label:"I am interested in space and land measurement, accurately determining boundaries using technical tools.", field:"Surveying" }
+          { label:"أحب تصميم الأبنية وتخطيط المساحات ومتابعة تفاصيل الإنشاء منذ البداية.", field:"Civil Engineering" },
+          { label:"أجد شغفًا في إدارة مواقع البناء وضمان تنفيذ المشروع وفق الميزانية والجدول الزمني.", field:"Construction Management" },
+          { label:"أهوى الرسم المعماري وتحويل الأفكار إلى تصاميم ثلاثية الأبعاد توضح تفاصيل البناء.", field:"Architectural Technology" },
+          { label:"أستمتع بتخطيط أنظمة التهوية والتكييف وضمان بيئة مريحة داخل المباني.", field:"Building Services Engineering – HVAC" },
+          { label:"أحب التعامل مع الأنظمة الكهربائية داخل المباني، مثل الإضاءة والتوصيلات الآمنة.", field:"Building Services Engineering – Electrical" },
+          { label:"لدي اهتمام بالمساحة وقياس الأراضي بدقة، وتحديد الحدود باستخدام أدوات تقنية.", field:"Surveying" }
         ]
       },
       "Travel & Tourism": {
-        question:"Which aspect of travel and tourism attracts you the most and you feel it suits your passion? (Choose only one)",
+        question:"أي من هذه الجوانب في عالم السفر والسياحة يجذبك أكثر وتشعر أنه يناسب شغفك؟ (اختر واحدة فقط)",
         options:[
-          { label:"I dream of working in aviation or managing operations within airports and airlines.", field:"Aviation" },
-          { label:"I love planning tours and experiences, ensuring customer satisfaction.", field:"Destination Management" },
-          { label:"I enjoy organizing events and conferences that attract attendance and present a professional image.", field:"Events" },
-          { label:"I am passionate about cultural heritage, shining a light on the history and culture of peoples.", field:"Innovation, Culture & Heritage" },
-          { label:"I am interested in developing sustainable tourism, whether cultural or environmental, that respects sustainability.", field:"Sustainable Management" },
-          { label:"I love working in tour operations, interacting with groups of tourists.", field:"Tour Operations" }
+          { label:"أحلم بالعمل في مجال الطيران أو إدارة العمليات داخل المطارات وشركات الطيران.", field:"Aviation" },
+          { label:"أحب تنسيق الرحلات والتجارب السياحية، والتأكد من رضا الزبائن عنها.", field:"Destination Management" },
+          { label:"أستمتع بتنظيم فعاليات ومؤتمرات وسهرات تجذب الحضور وتعكس صورة احترافية.", field:"Events" },
+          { label:"لدي شغف بالتراث الثقافي، وأحب تسليط الضوء على تاريخ وثقافة الشعوب.", field:"Innovation, Culture & Heritage" },
+          { label:"أهتم بتطوير السياحة البيئية أو الثقافية بطريقة تراعي الاستدامة.", field:"Sustainable Management" },
+          { label:"أحب العمل في تنظيم الرحلات والجولات، والتفاعل مع مجموعات من السائحين.", field:"Tour Operations" }
         ]
       },
       "Health & Social Care": {
-        question:"What excites you the most in this field?",
+        question:"ما الذي يحفزك أكثر في هذا المجال؟",
         options:[
-          { label:"I love working with people, providing health or mental support to those who need it, whether in community centers or medical environments, and I always strive to improve the quality of life of others.", field:"Integrated Health & Social Care Practice" }
+          { label:"أحب العمل مع الناس، وتقديم الدعم الصحي أو النفسي لمن يحتاجونه، سواء في المراكز المجتمعية أو البيئات الطبية، وأسعى دائمًا لتحسين جودة حياة الآخرين.", field:"Integrated Health & Social Care Practice" }
         ]
       },
       "Esports": {
-        question:"Which part of the esports and professional sports world excites you the most? (Choose only one)",
+        question:"ما الجزء الذي يشدك أكثر في عالم الألعاب الإلكترونية ورياضات المحترفين؟ (اختر واحدة فقط)",
         options:[
-          { label:"I love team competition, leading a team in major esports tournaments.", field:"Esports – General" },
-          { label:"I enjoy managing the operations behind the scenes, ensuring events run efficiently.", field:"Operations Management" },
-          { label:"I am interested in producing visual content for games, such as live streaming or creating professional videos.", field:"Production" },
-          { label:"I care about the mental and physical health of athletes, providing support during training and tournaments.", field:"Athlete Support and Development" }
+          { label:"أحب المنافسة الجماعية، وقيادة فريق في بطولات الألعاب الإلكترونية الكبرى.", field:"Esports – General" },
+          { label:"أستمتع بإدارة العمليات وراء الكواليس، وضمان سير بطولات الألعاب بكفاءة عالية.", field:"Operations Management" },
+          { label:"لدي اهتمام بإنتاج محتوى بصري للألعاب، مثل البث المباشر أو إعداد الفيديوهات الاحترافية.", field:"Production" },
+          { label:"أهتم بصحة اللاعبين الذهنية والبدنية، وتقديم الدعم لهم خلال التدريبات والبطولات.", field:"Athlete Support and Development" }
         ]
       },
       "Hospitality Management": {
-        question:"What attracts you in the hospitality and hotel management field?",
+        question:"ما الذي يجذبك في مجال الضيافة وإدارة الفنادق؟",
         options:[
-          { label:"I love planning unique experiences for guests, managing teams in hotels and restaurants, providing professional services that reflect professionalism and kindness, whether in local or global venues.", field:"Hospitality Management" }
+          { label:"أحب التخطيط لتجارب مميزة للضيوف، إدارة الفرق في الفنادق والمطاعم، وتقديم خدمات راقية تعكس الاحتراف والكرم، سواء في أماكن محلية أو عالمية.", field:"Hospitality Management" }
         ]
       }
     };
 // **## **// ========== نتائج المرحلة الثالثة ==========****
 const resultsData = {
-  // Business Management
+  // إدارة الأعمال
   "Accounting & Finance": `<div style="
   width:360px;
   height:670px;
@@ -199,7 +608,7 @@ const resultsData = {
   flex-direction:column;
   align-items:center;
   padding:0;
-  font-family:'Segoe UI', Arial, sans-serif;
+  font-family:'Cairo', Arial, sans-serif;
   position:relative;
   overflow:hidden;
 ">
@@ -210,7 +619,7 @@ const resultsData = {
     display:flex; align-items:center; justify-content:center;
     border-radius:36px 36px 0 0;
     letter-spacing:1.1px;">
-    Your Perfect Major Based on Your Personality
+    تخصصك المثالي حسب شخصيتك
   </div>
 
   <div style="margin-top:16px; margin-bottom:6px;">
@@ -219,41 +628,41 @@ const resultsData = {
 
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Accounting & Finance
+      Accounting & Finance – المحاسبة والتمويل
     </div>
   </div>
 
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why This Major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      Your analytical skills and passion for numbers give you a unique ability to understand markets and analyze financial data with professional intelligence.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      مهارتك التحليلية وشغفك بالأرقام يمنحانك قدرة فريدة على فهم الأسواق وتحليل البيانات المالية بذكاء احترافي.
     </div>
   </div>
 
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>30,000</span> to
-      <span style='color:#28a745;font-weight:bold;'>65,000</span> pounds sterling annually, with amazing growth opportunities.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>30,000</span> إلى
+      <span style='color:#28a745;font-weight:bold;'>65,000</span> جنيه إسترليني سنويًا، مع فرص نمو مذهلة.
     </div>
   </div>
 
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in Britain</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      British universities offer you globally recognized programs, and we support you step by step for registration and admission.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      الجامعات البريطانية تتيح لك برامج معترف بها عالميًا، ونحن ندعمك خطوة بخطوة للتسجيل والقبول.
     </div>
   </div>
 
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Professional Future</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      The future awaits you as a financial manager or investment analyst in major global companies.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      المستقبل ينتظرك كمدير مالي أو محلل استثماري في شركات عالمية كبرى.
     </div>
   </div>
 
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 Your Financial Future Starts Today!
+    🌟 مستقبلك المالي يبدأ اليوم!
   </div>
 
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
@@ -262,7 +671,7 @@ const resultsData = {
       padding:8px 16px; color:white;
       font-weight:800; border-radius:22px; font-size:0.92em;
       box-shadow:0 2px 8px #f6b20c88;">
-      Start Your University Journey Now
+      ابدأ رحلتك الجامعية الآن
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -270,94 +679,94 @@ const resultsData = {
   </div>
 </div>`,
 "Operations Management":`
-<div id="resultImageCard" style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Segoe UI', Arial, sans-serif;position:relative;overflow:hidden;">
+<div id="resultImageCard" style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
   <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your Perfect Major Based on Your Personality
+    تخصصك المثالي حسب شخصيتك
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">🗂️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Esports – Operations Management
+      Esports – إدارة العمليات
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why This Major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      Your organizational skills qualify you to manage tournaments and electronic events that bring together thousands of players and followers around the world.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      مهاراتك التنظيمية تؤهلك لإدارة البطولات والفعاليات الإلكترونية التي تجمع آلاف اللاعبين والمتابعين حول العالم.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>32,000</span> to <span style='color:#28a745;font-weight:bold;'>70,000</span> pounds sterling annually and increase with experience and excellence.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>32,000</span> إلى <span style='color:#28a745;font-weight:bold;'>70,000</span> جنيه إسترليني سنويًا وتزداد مع الخبرة والتميز.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in Britain</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      The United Kingdom provides specialized programs and practical opportunities in major electronic tournaments.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      المملكة المتحدة توفر برامج متخصصة وفرص تطبيقية في كبرى البطولات الإلكترونية.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Professional Future</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      You're destined to be a tournament organizer for global events broadcast to millions of viewers worldwide.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      نراك منظمًا لبطولات عالمية تُبث لملايين المشاهدين حول العالم.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 You're the Master of Digital Events!
+    🌟 أنت مايسترو الأحداث الرقمية!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
-    <a href="#" onclick="showStudyCalculator(); return false;" style="
-      text-decoration:none; background:#f6b20c;
-      padding:8px 16px; color:white;
-      font-weight:800; border-radius:22px; font-size:0.92em;
-      box-shadow:0 2px 8px #f6b20c88;">
-      Start Your University Journey Now
+    <a href="#" onclick="showStudyCalculator();" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
+      ابدأ رحلتك الجامعية الآن
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
     </div>
   </div>
-  </div>
+</div>
 `,
 "Production":`
+<div id="resultImageCard" style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
+    تخصصك المثالي حسب شخصيتك
+  </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">🏅</span>
+    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">🎥</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Esports – Player Support and Development
+      Esports – الإنتاج والبث
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      Your skills in training and psychological support enable you to enhance player capabilities and achieve the best results for your team.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      اهتمامك بالإخراج والإنتاج يجعل منك صانعًا للمحتوى الرقمي المميز في بطولات الألعاب الإلكترونية.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>30,000</span> to <span style='color:#28a745;font-weight:bold;'>65,000</span> British pounds annually, and increase with your success and team experience.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>30,000</span> إلى <span style='color:#28a745;font-weight:bold;'>68,000</span> جنيه إسترليني سنويًا وتزداد مع شهرتك ومهاراتك.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      Britain offers specialized educational programs that combine sports, psychology, and modern technology.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      بريطانيا توفر بيئة متقدمة لصقل المهارات الإنتاجية والبث الاحترافي للمسابقات العالمية.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      I see you as a coach or consultant helping professional players achieve world-class achievements.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      نراك مخرجًا أو منتجًا لبطولات تُعرض على منصات دولية لملايين المتابعين.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 You're the maker of digital champions!
+    🌟 أنت صانع متعة المشاهدة الرقمية!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="
@@ -365,7 +774,60 @@ const resultsData = {
       padding:8px 16px; color:white;
       font-weight:800; border-radius:22px; font-size:0.92em;
       box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      ابدأ رحلتك الجامعية الآن
+    </a>
+    <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
+      isgateway.org
+    </div>
+  </div>
+</div>`,
+"Athlete Support and Development":`
+<div id="resultImageCard" style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
+    تخصصك المثالي حسب شخصيتك
+  </div>
+  <div style="margin-top:16px; margin-bottom:6px;">
+    <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">🏅</span>
+  </div>
+  <div style="width:90%; margin-bottom:10px;">
+    <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
+      Esports – دعم وتطوير اللاعبين
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      مهاراتك في التدريب والدعم النفسي تضعك في مركز تطوير إمكانيات اللاعبين وتحقيق أفضل النتائج لفريقك.
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>30,000</span> إلى <span style='color:#28a745;font-weight:bold;'>65,000</span> جنيه إسترليني سنويًا وتزداد مع نجاحك وخبرة فريقك.
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      المملكة المتحدة تضم برامج تعليمية متخصصة تجمع بين الرياضة وعلم النفس والتقنية الحديثة.
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      نراك مدربًا أو مستشارًا يساعد اللاعبين المحترفين على تحقيق إنجازات عالمية.
+    </div>
+  </div>
+  <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
+    🌟 أنت صانع الأبطال الرقميين!
+  </div>
+  <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
+    <a href="#" onclick="showStudyCalculator(); return false;" style="
+      text-decoration:none; background:#f6b20c;
+      padding:8px 16px; color:white;
+      font-weight:800; border-radius:22px; font-size:0.92em;
+      box-shadow:0 2px 8px #f6b20c88;">
+      ابدأ رحلتك الجامعية الآن
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -375,57 +837,56 @@ const resultsData = {
 
   "Business Management": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
   <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+    تخصصك المثالي حسب شخصيتك
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">🧑‍💼</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Business Management
+      Business Management – إدارة الأعمال
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      You have a leadership spirit and a strategic managerial vision that qualify you to succeed in the modern business world.
+      لديك روح قيادية ونظرة إدارية استراتيجية تؤهلك للنجاح في عالم الأعمال الحديث.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      The salary starts from <span style='color:#e68a00;font-weight:bold;'>£29,000</span> to <span style='color:#28a745;font-weight:bold;'>£70,000</span> per year, with fast growth opportunities.
+      يبدأ الراتب من <span style='color:#e68a00;font-weight:bold;'>29,000</span> إلى <span style='color:#28a745;font-weight:bold;'>70,000</span> جنيه إسترليني سنويًا مع فرص نمو متسارعة.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in the UK</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      We provide full support for enrolling in top UK universities in management.
+      نوفر لك كامل الدعم للتسجيل في جامعات بريطانية رائدة عالميًا في الإدارة.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career Future</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      We see you in the future as a leader and executive achieving great accomplishments in global companies.
+      نراك في المستقبل قائدًا ومديرًا تنفيذيًا يحقق إنجازات عظيمة في شركات عالمية.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 Leadership begins with a bold step!
+    🌟 القيادة تبدأ بخطوة جريئة!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      ابدأ رحلتك الجامعية الآن
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
     </div>
   </div>
-</div>
-`,
+</div>`,
 
   "Entrepreneurship & Small Business Management": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
   <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your Perfect Major Based on Your Personality
+    تخصصك المثالي حسب شخصيتك
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">🚀</span>
@@ -474,7 +935,7 @@ const resultsData = {
 
   "Human Resource Management": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
   <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your Perfect Major Based on Your Personality
+    تخصصك المثالي حسب شخصيتك
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">🤝</span>
@@ -523,46 +984,46 @@ const resultsData = {
 
   "Marketing": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
   <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+    تخصصك المثالي حسب شخصيتك
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">📢</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Marketing – Marketing
+      Marketing – التسويق
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Your creativity and attractive ideas lead you to create successful marketing campaigns that reflect the digital era.
+      إبداعك وأفكارك الجذابة تقودك لابتكار حملات تسويقية ناجحة تواكب العصر الرقمي.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>25,000</span> to <span style='color:#28a745;font-weight:bold;'>50,000</span> British pounds annually.
+      يبدأ الراتب من <span style='color:#e68a00;font-weight:bold;'>25,000</span> إلى <span style='color:#28a745;font-weight:bold;'>50,000</span> جنيه إسترليني سنويًا.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Britain is the gateway to innovation in marketing, with prestigious universities and advanced curricula.
+      بريطانيا هي البوابة للابتكار في مجال التسويق، مع جامعات عريقة ومناهج متطورة.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      I see you as a famous marketing manager leading global impactful campaigns.
+      نراك مديرًا تسويقيًا مشهورًا يقود حملات عالمية مؤثرة.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 Be the success of brands!
+    🌟 كن صانع النجاح للعلامات التجارية!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      ابدأ رحلتك الجامعية الآن
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -573,46 +1034,46 @@ const resultsData = {
   // إضافة التخصصات الجديدة
   "Procurement & Supply Management": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
   <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+    تخصصك المثالي حسب شخصيتك
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">🚚</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Procurement & Supply Management – Procurement & Supply Management
+      Procurement & Supply Management – إدارة المشتريات وسلاسل الإمداد
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Your strong organizational skills qualify you to manage product flows and operations efficiently worldwide.
+      لديك قدرة تنظيمية قوية تؤهلك لإدارة تدفق المنتجات والعمليات بكفاءة عالمية.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>28,000</span> to <span style='color:#28a745;font-weight:bold;'>65,000</span> British pounds annually.
+      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>28,000</span> إلى <span style='color:#28a745;font-weight:bold;'>65,000</span> جنيه إسترليني سنويًا.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      British universities offer advanced specialized programs in supply chain and procurement.
+      الجامعات البريطانية تقدم برامج تخصصية متقدمة في سلاسل الإمداد والمشتريات.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      I see you as a global supply chain manager for major companies worldwide.
+      نراك مديرًا دوليًا لسلاسل الإمداد لدى شركات كبرى حول العالم.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 Your success drives the markets!
+    🌟 نجاحك يدير حركة الأسواق!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      ابدأ رحلتك الجامعية الآن
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -622,46 +1083,46 @@ const resultsData = {
 
   "Law": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
   <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+    تخصصك المثالي حسب شخصيتك
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">⚖️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Law – Law
+      Law – القانون
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Your passion for justice and laws guides you to make a difference in people's lives and society.
+      شغفك بالعدالة والقوانين يوجهك لصناعة الفارق في حياة الناس ومجتمعك.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>28,000</span> to <span style='color:#28a745;font-weight:bold;'>140,000</span> British pounds annually, depending on experience and field.
+      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>28,000</span> إلى <span style='color:#28a745;font-weight:bold;'>140,000</span> جنيه إسترليني سنويًا حسب الخبرة والمجال.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Britain is renowned worldwide for its excellent law schools and wide range of training opportunities.
+      بريطانيا معروفة عالميًا بتميز كليات القانون وفرص التدريب الواسعة.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      I see you as a famous lawyer or influential judge impacting justice and society.
+      نراك محاميًا دوليًا أو قاضيًا بارزًا يؤثر في العدالة والمجتمع.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 Justice is your mission, and the future awaits you!
+    🌟 العدل رسالتك والمستقبل ينتظرك!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      ابدأ رحلتك الجامعية الآن
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -672,46 +1133,46 @@ const resultsData = {
   // تخصصات تقنية المعلومات
   "General Computing": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
   <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+    تخصصك المثالي حسب شخصيتك
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">💻</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      General Computing – General Computing
+      General Computing – الحوسبة العامة
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Your high technical skills qualify you to work in any technical field and develop smart solutions for various sectors.
+      مهاراتك التقنية العالية تؤهلك للعمل في أي مجال تقني وتطوير الحلول الذكية لمختلف القطاعات.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>30,000</span> to <span style='color:#28a745;font-weight:bold;'>65,000</span> British pounds annually, depending on experience.
+      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>30,000</span> إلى <span style='color:#28a745;font-weight:bold;'>65,000</span> جنيه إسترليني سنويًا حسب خبرتك.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Britain, the global leader in technology, opens up learning and development opportunities in a professional environment.
+      بريطانيا الرائدة عالميًا في التقنية تفتح لك آفاق التعلم والتطور في بيئة احترافية.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      The future awaits you as a tech expert or IT systems engineer in global tech companies.
+      المستقبل ينتظرك كخبير تقني أو مهندس نظم معلومات في شركات تقنية عالمية.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 Technology in your hands, and the future ahead!
+    🌟 التقنية بين يديك والمستقبل أمامك!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      ابدأ رحلتك الجامعية الآن
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -721,46 +1182,46 @@ const resultsData = {
 
   "Software Engineering": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
   <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+    تخصصك المثالي حسب شخصيتك
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">🧑‍💻</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Software Engineering – Software Engineering
+      Software Engineering – هندسة البرمجيات
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Your creativity in building software and designing software solutions propels you towards leadership in this innovative field.
+      إبداعك في بناء البرامج وتصميم الحلول البرمجية يدفعك نحو الريادة في هذا المجال المبتكر.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Your salary starts from <span style='color:#e68a00;font-weight:bold;'>35,000</span> to <span style='color:#28a745;font-weight:bold;'>75,000</span> British pounds annually with experience accumulation.
+      يبدأ راتبك من <span style='color:#e68a00;font-weight:bold;'>35,000</span> إلى <span style='color:#28a745;font-weight:bold;'>75,000</span> جنيه إسترليني سنويًا مع تراكم الخبرة.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Britain hosts the best software engineering colleges and provides you with a competitive and inspiring technical environment.
+      بريطانيا تحتضن أفضل كليات البرمجة وتوفر لك بيئة تقنية تنافسية وملهمة.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      We see you as a technical leader innovating applications and platforms used by millions of people worldwide.
+      نراك مديرًا تقنيًا يبتكر تطبيقات ومنصات يستخدمها ملايين الناس حول العالم.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 Programming is the future of the digital world!
+    🌟 البرمجة مستقبل العالم الرقمي!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      ابدأ رحلتك الجامعية الآن
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -770,46 +1231,46 @@ const resultsData = {
 
   "Applications Development & Testing": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
   <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+    تخصصك المثالي حسب شخصيتك
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">📱</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Applications Development & Testing – Applications Development & Testing
+      Applications Development & Testing – تطوير واختبار التطبيقات
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Your attention to detail and interest in quality make you a successful application developer and a leader in quality testing.
+      دقتك واهتمامك بالتفاصيل يجعل منك مطور تطبيقات ناجح وقائد في اختبار الجودة.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>32,000</span> to <span style='color:#28a745;font-weight:bold;'>68,000</span> British pounds annually with career progression.
+      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>32,000</span> إلى <span style='color:#28a745;font-weight:bold;'>68,000</span> جنيه إسترليني سنويًا مع التقدم في الخبرة.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      The UK provides you with an excellent educational experience and real-world training opportunities in the tech industry.
+      المملكة المتحدة تمنحك بيئة تعليمية متميزة وفرص تدريبية حقيقية في السوق التقني.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      We see you as a team leader for application development in leading global companies.
+      نراك قائدًا لفريق تطوير التطبيقات في شركات عالمية رائدة.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 Your applications build the future!
+    🌟 تطبيقاتك تصنع المستقبل!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      ابدأ رحلتك الجامعية الآن
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -819,46 +1280,46 @@ const resultsData = {
 
   "Data Analytics": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
   <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+    تخصصك المثالي حسب شخصيتك
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">📈</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Data Analytics – Data Analytics
+      Data Analytics – تحليل البيانات
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      You have a unique talent in turning data into strategic decisions that create success for organizations.
+      لديك موهبة فريدة في تحويل الأرقام إلى قرارات استراتيجية تخلق النجاح للمؤسسات.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>35,000</span> to <span style='color:#28a745;font-weight:bold;'>70,000</span> British pounds annually with experience.
+      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>35,000</span> إلى <span style='color:#28a745;font-weight:bold;'>70,000</span> جنيه إسترليني سنويًا مع الخبرة.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      The UK is a global hub for data analytics and its advanced programs empower you to lead the digital transformation.
+      المملكة المتحدة مركز عالمي لتحليل البيانات وبرامجها المتطورة تؤهلك لقيادة التحول الرقمي.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      We see you as a data analytics manager in large global organizations.
+      نراك رئيسًا لقسم تحليل البيانات في مؤسسات عالمية ضخمة.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 Data is the power of the future in your hands!
+    🌟 البيانات قوة المستقبل بين يديك!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      ابدأ رحلتك الجامعية الآن
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -868,46 +1329,46 @@ const resultsData = {
 
   "Network Engineering": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
   <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+    تخصصك المثالي حسب شخصيتك
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">🌐</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Network Engineering – Network Engineering
+      Network Engineering – هندسة الشبكات
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Your passion for network technologies and building digital infrastructure makes you a leader in the communications world.
+      شغفك بتقنيات الشبكات وبناء البنية التحتية الرقمية يصنع منك قائدًا في عالم الاتصالات.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>32,000</span> to <span style='color:#28a745;font-weight:bold;'>72,000</span> British pounds annually with career advancement.
+      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>32,000</span> إلى <span style='color:#28a745;font-weight:bold;'>72,000</span> جنيه إسترليني سنويًا مع تقدمك الوظيفي.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Britain provides you with the best theoretical and practical experience in networking and modern digital technologies.
+      بريطانيا تمنحك أفضل تجربة علمية وعملية في مجال الشبكات والتقنيات الرقمية الحديثة.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      We see you as a technical manager for networks in the largest communications companies worldwide.
+      نراك مديرًا تقنيًا للشبكات في أكبر شركات الاتصالات حول العالم.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 You are the bridge between the digital world!
+    🌟 أنت صلة الوصل بين العالم الرقمي!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      ابدأ رحلتك الجامعية الآن
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -917,46 +1378,46 @@ const resultsData = {
 
   "Cyber Security": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
   <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+    تخصصك المثالي حسب شخصيتك
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">🛡️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Cyber Security – Cyber Security
+      Cyber Security – الأمن السيبراني
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      You have a unique talent in protecting data and digital systems from attacks and breaches.
+      لديك موهبة فريدة في حماية البيانات والأنظمة الرقمية من الهجمات والاختراقات.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>40,000</span> to <span style='color:#28a745;font-weight:bold;'>90,000</span> British pounds annually and increase with excellence and experience.
+      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>40,000</span> إلى <span style='color:#28a745;font-weight:bold;'>90,000</span> جنيه إسترليني سنويًا وتزداد مع التميز والخبرة.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Britain is the best destination for studying cyber security with accredited programs and an active job market.
+      بريطانيا هي الوجهة الأفضل لدراسة الأمن السيبراني ببرامج معتمدة وسوق عمل نشط.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      We see you as a cyber security expert protecting global companies from digital attacks and making a difference.
+      نراك خبيرًا في الأمن السيبراني يحمي شركات عالمية من الهجمات الرقمية ويصنع الفارق.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 Be the guardian of the digital world!
+    🌟 كن حارس العالم الرقمي!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      ابدأ رحلتك الجامعية الآن
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -967,18 +1428,18 @@ const resultsData = {
   // تخصصات الهندسة
   "General Engineering": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
   <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+    تخصصك المثالي حسب شخصيتك
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">🛠️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      General Engineering – General Engineering
+      General Engineering – الهندسة العامة
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
       تمتلك عقلًا هندسيًا مبتكرًا يجمع بين مختلف فروع الهندسة لتقديم حلول متكاملة وإبداعية للمشاريع الضخمة.
     </div>
@@ -1018,50 +1479,50 @@ const resultsData = {
   <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
     تخصصك المثالي حسب شخصيتك
   </div>
-   <div style="margin-top:16px; margin-bottom:6px;">
+  <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">🏭</span>
-   </div>
-   <div style="width:90%; margin-bottom:10px;">
-     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
+  </div>
+  <div style="width:90%; margin-bottom:10px;">
+    <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
       Manufacturing Engineering – هندسة التصنيع
-     </div>
-   </div>
-   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
       شغفك بتطوير العمليات الصناعية وتحسين الإنتاجية يجعلك قائدًا في عالم التصنيع الحديث.
-     </div>
-   </div>
-   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
       تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>32,000</span> إلى <span style='color:#28a745;font-weight:bold;'>68,000</span> جنيه إسترليني سنويًا.
-     </div>
-   </div>
-   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
       بريطانيا رائدة في الهندسة الصناعية وتوفر لك أحدث التقنيات والمعدات للتعلم.
-     </div>
-   </div>
-   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
       نراك مديرًا للإنتاج في مصانع عالمية كبرى تطور منتجات تغير العالم.
-     </div>
-   </div>
-   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
+    </div>
+  </div>
+  <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
     🌟 أنت محرك الصناعة والإنتاج!
-   </div>
-   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
-     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
+  </div>
+  <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
+    <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
       ابدأ رحلتك الجامعية الآن
-     </a>
-     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
-       isgateway.org
-     </div>
-   </div>
- </div>`,
+    </a>
+    <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
+      isgateway.org
+    </div>
+  </div>
+</div>`,
 
   "Mechatronics": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
   <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
@@ -3346,11 +3807,6 @@ userEmail: "" //
 };
 
 // ========== دوال واجهة المستخدم ==========
-// Function to start the quiz
-function startQuiz() {
-  document.getElementById('welcomeSection').style.display = 'none';
-  document.getElementById('quizSection').style.display = 'block';
-}
 
 function setProgress(percent) {
   document.getElementById('progressBar').style.width = percent + "%";
@@ -3391,7 +3847,7 @@ function renderStage1() {
 
   let html = `
     <div class="main-question">${question}</div>
-    <div class="stage-label">Step 1</div>
+    <div class="stage-label">المرحلة الأولى</div>
     ${qIndex === 3 ? '<div class="note">ملاحظة: اختر خيار واحد فقط بكلمة "نعم" وهو الأقرب إليك</div>' : ""}
     <div id="optionsArea"></div>
     <button class="btn-main" onclick="submitStage1Q()" id="nextBtn" disabled>التالي</button>
@@ -3406,9 +3862,9 @@ function renderOptions(options, qIndex) {
       <div class="option" id="opt${i}">
         <span>${option}</span>
         <div class="answers-bar" id="ans${i}">
-          <button onclick="choose('Yes',${i}); event.stopPropagation();" id="btnYes${i}">Yes</button>
-          <button onclick="choose('Sometimes',${i}); event.stopPropagation();" id="btnMaybe${i}">Sometimes</button>
-          <button onclick="choose('No',${i}); event.stopPropagation();" id="btnNo${i}">No</button>
+          <button onclick="choose('نعم',${i}); event.stopPropagation();" id="btnYes${i}">نعم</button>
+          <button onclick="choose('أحيانا',${i}); event.stopPropagation();" id="btnMaybe${i}">أحياناً</button>
+          <button onclick="choose('لا',${i}); event.stopPropagation();" id="btnNo${i}">لا</button>
         </div>
       </div>
     `;
@@ -3423,11 +3879,11 @@ quizState.answers[qIndex].forEach((ans, i) => {
 }
 function choose(val, idx) {
   let qIndex = quizState.currentQ;
-  if (qIndex === 3 && val === "Yes") {
+  if (qIndex === 3 && val === "نعم") {
     // إذا حاول المستخدم اختيار "نعم" لخيار جديد، يجب جعل كل الخيارات الأخرى "لا"
-    quizState.answers[qIndex] = quizState.answers[qIndex].map(() => ({answer: "No"}));
-    quizState.answers[qIndex][idx] = {answer: "Yes"};
-  } else if (qIndex === 3 && val !== "Yes" && quizState.answers[qIndex][idx].answer === "Yes") {
+    quizState.answers[qIndex] = quizState.answers[qIndex].map(() => ({answer: "لا"}));
+    quizState.answers[qIndex][idx] = {answer: "نعم"};
+  } else if (qIndex === 3 && val !== "نعم" && quizState.answers[qIndex][idx].answer === "نعم") {
     // إذا ضغط المستخدم على خيار آخر (غير نعم)، فقط بدّل القيمة
     quizState.answers[qIndex][idx] = {answer: val};
   } else {
@@ -3438,7 +3894,7 @@ function choose(val, idx) {
   let allAnswered = quizState.answers[qIndex].every(ans => ans.answer !== "");
   // في السؤال الرابع: تحقق أن هناك فقط "نعم" واحدة
   if (qIndex === 3) {
-    let yesCount = quizState.answers[qIndex].filter(ans => ans.answer === "Yes").length;
+    let yesCount = quizState.answers[qIndex].filter(ans => ans.answer === "نعم").length;
     allAnswered = allAnswered && yesCount === 1;
   }
   document.getElementById('nextBtn').disabled = !allAnswered;
@@ -3450,9 +3906,9 @@ function highlightAnswer(idx, val) {
     let btn = document.getElementById(`btn${type}${idx}`);
     if (btn) btn.classList.remove("selected");
   });
-  if (val === "Yes") document.getElementById(`btnYes${idx}`).classList.add("selected");
-  else if (val === "Sometimes") document.getElementById(`btnMaybe${idx}`).classList.add("selected");
-  else if (val === "No") document.getElementById(`btnNo${idx}`).classList.add("selected");
+  if (val === "نعم") document.getElementById(`btnYes${idx}`).classList.add("selected");
+  else if (val === "أحيانا") document.getElementById(`btnMaybe${idx}`).classList.add("selected");
+  else if (val === "لا") document.getElementById(`btnNo${idx}`).classList.add("selected");
 }
 
 function submitStage1Q() {
@@ -3460,7 +3916,7 @@ function submitStage1Q() {
   let qIndex = quizState.currentQ;
   let yesArr = [];
   quizState.answers[qIndex].forEach((ans, i) => {
-    if (ans.answer === "Yes") yesArr.push(quizState.reducedIndexes[i]);
+    if (ans.answer === "نعم") yesArr.push(quizState.reducedIndexes[i]);
   });
 
   // إذا كنا في آخر سؤال (الرابع)
@@ -3866,3 +4322,7 @@ function initializeStudyCalculator() {
   window.addEventListener('DOMContentLoaded', validateForm);
   fetchExchangeRates();
 }
+</script>
+</body>
+</html>
+
