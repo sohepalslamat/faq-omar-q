@@ -186,7 +186,7 @@ const optionsTextsP1 = [
     };
 // **## **// ========== نتائج المرحلة الثالثة ==========****
 const resultsData = {
-  // Business Management
+// Business Management
   "Accounting & Finance": `<div style="
   width:360px;
   height:670px;
@@ -209,51 +209,51 @@ const resultsData = {
     color:#fff; font-size:1.3em; font-weight:900;
     display:flex; align-items:center; justify-content:center;
     border-radius:36px 36px 0 0;
-    letter-spacing:1.1px;">
+    letter-spacing:1.1px;
+    text-align:center;">
     Your Perfect Major Based on Your Personality
   </div>
 
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">📊</span>
+    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">🚀</span>
   </div>
 
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Accounting & Finance
+      Entrepreneurship & Small Business Management
     </div>
   </div>
 
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why This Major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      Your analytical skills and passion for numbers give you a unique ability to understand markets and analyze financial data with professional intelligence.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      You love new ideas and turning them into real projects.
     </div>
   </div>
 
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>30,000</span> to
-      <span style='color:#28a745;font-weight:bold;'>65,000</span> pounds sterling annually, with amazing growth opportunities.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Start from <span style='color:#e68a00;font-weight:bold;'>£26,000</span> to <span style='color:#28a745;font-weight:bold;'>£32,000</span> per year. Success can raise your income above <span style='color:#28a745;font-weight:bold;'>£100,000</span>.
     </div>
   </div>
 
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in Britain</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      British universities offer you globally recognized programs, and we support you step by step for registration and admission.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      UK universities teach you how to succeed in business.
     </div>
   </div>
 
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Professional Future</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      The future awaits you as a financial manager or investment analyst in major global companies.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      You could start a company and make an impact worldwide.
     </div>
   </div>
 
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 Your Financial Future Starts Today!
+    🌟 Start your project and change the world!
   </div>
 
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
@@ -271,7 +271,7 @@ const resultsData = {
 </div>`,
 "Operations Management":`
 <div id="resultImageCard" style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Segoe UI', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
     Your Perfect Major Based on Your Personality
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
@@ -284,26 +284,26 @@ const resultsData = {
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why This Major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      Your organizational skills qualify you to manage tournaments and electronic events that bring together thousands of players and followers around the world.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      You excel at organizing tournaments and digital events.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>32,000</span> to <span style='color:#28a745;font-weight:bold;'>70,000</span> pounds sterling annually and increase with experience and excellence.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Salaries start from <span style='color:#e68a00;font-weight:bold;'>£32,000</span> to <span style='color:#28a745;font-weight:bold;'>£70,000</span> per year and grow with experience.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in Britain</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      The United Kingdom provides specialized programs and practical opportunities in major electronic tournaments.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      UK programs offer practical training in major esports events.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Professional Future</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      You're destined to be a tournament organizer for global events broadcast to millions of viewers worldwide.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a global tournament organizer seen by millions.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
@@ -321,9 +321,13 @@ const resultsData = {
       isgateway.org
     </div>
   </div>
-  </div>
-`,
+</div>`,
+
 "Production":`
+<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Segoe UI', Arial, sans-serif;position:relative;overflow:hidden;">
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Perfect Major Based on Your Personality
+  </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">🏅</span>
   </div>
@@ -334,30 +338,30 @@ const resultsData = {
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      Your skills in training and psychological support enable you to enhance player capabilities and achieve the best results for your team.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      You help players grow and reach their best performance.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>30,000</span> to <span style='color:#28a745;font-weight:bold;'>65,000</span> British pounds annually, and increase with your success and team experience.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Salaries start from <span style='color:#e68a00;font-weight:bold;'>£30,000</span> to <span style='color:#28a745;font-weight:bold;'>£65,000</span> per year and grow with your team’s success.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      Britain offers specialized educational programs that combine sports, psychology, and modern technology.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      UK programs combine sports, psychology, and technology.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:left;">
-      I see you as a coach or consultant helping professional players achieve world-class achievements.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Future</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a coach or consultant for top esports teams.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 You're the maker of digital champions!
+    🌟 You build digital champions!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="
@@ -365,7 +369,7 @@ const resultsData = {
       padding:8px 16px; color:white;
       font-weight:800; border-radius:22px; font-size:0.92em;
       box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -373,9 +377,9 @@ const resultsData = {
   </div>
 </div>`,
 
-  "Business Management": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+"Business Management": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Ideal Major Based on Your Personality
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">🧑‍💼</span>
@@ -387,26 +391,26 @@ const resultsData = {
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      You have a leadership spirit and a strategic managerial vision that qualify you to succeed in the modern business world.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      You have leadership skills and a vision for success in business.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      The salary starts from <span style='color:#e68a00;font-weight:bold;'>£29,000</span> to <span style='color:#28a745;font-weight:bold;'>£70,000</span> per year, with fast growth opportunities.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Salaries start from <span style='color:#e68a00;font-weight:bold;'>£29,000</span> to <span style='color:#28a745;font-weight:bold;'>£70,000</span> per year, with fast growth.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in the UK</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      We provide full support for enrolling in top UK universities in management.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      We support your admission to top UK business schools.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career Future</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      We see you in the future as a leader and executive achieving great accomplishments in global companies.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      You can become a leader in international companies.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
@@ -414,17 +418,17 @@ const resultsData = {
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
     </div>
   </div>
-</div>
+</div
 `,
 
   "Entrepreneurship & Small Business Management": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
     Your Perfect Major Based on Your Personality
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
@@ -432,39 +436,39 @@ const resultsData = {
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Entrepreneurship & Small Business Management – ريادة الأعمال
+      Entrepreneurship & Small Business Management
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      لديك روح المبادرة والإبداع. تبحث دومًا عن الأفكار الجديدة وتحوّلها إلى مشاريع ناجحة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      You love turning new ideas into real projects.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      قد تبدأ برواتب <span style='color:#e68a00;font-weight:bold;'>26,000</span> – <span style='color:#28a745;font-weight:bold;'>32,000</span> جنيه إسترليني. مع نجاح مشاريعك، قد يتجاوز دخلك <span style='color:#28a745;font-weight:bold;'>100,000</span> سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Start from <span style='color:#e68a00;font-weight:bold;'>£26,000</span> to <span style='color:#28a745;font-weight:bold;'>£32,000</span>. Success can bring over <span style='color:#28a745;font-weight:bold;'>£100,000</span>.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تمنحك الفرصة للتعلم من أنجح رواد الأعمال في جامعاتها المرموقة عالميًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Learn from leading entrepreneurs at top UK universities.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مؤسسًا لشركة ناشئة مبتكرة تترك بصمتك في العالم.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career Future</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a founder of an innovative startup.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 ابدأ مشروعك وغير العالم!
+    🌟 Start your project and change the world!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -473,7 +477,7 @@ const resultsData = {
 </div>`,
 
   "Human Resource Management": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
     Your Perfect Major Based on Your Personality
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
@@ -481,39 +485,39 @@ const resultsData = {
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Human Resource Management – إدارة الموارد البشرية
+      Human Resource Management
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      مهاراتك الاجتماعية وقدرتك على التواصل الفعال تؤهلك لبناء فرق عمل ناجحة وتطوير الكفاءات.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your people skills help you build strong teams and develop talent.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>26,000</span> إلى <span style='color:#28a745;font-weight:bold;'>60,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Salaries start from <span style='color:#e68a00;font-weight:bold;'>£26,000</span> to <span style='color:#28a745;font-weight:bold;'>£60,000</span> per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تمنحك أحدث مهارات الإدارة والتعامل مع الكفاءات في بيئة عمل عالمية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      UK universities teach the latest HR skills for global workplaces.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مديرًا للموارد البشرية في شركات رائدة عالميًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career Future</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become an HR manager in leading companies.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت صانع الفارق في بيئة العمل!
+    🌟 You make a difference at work!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -522,39 +526,39 @@ const resultsData = {
 </div>`,
 
   "Marketing": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Ideal Major Based on Your Personality
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">📢</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Marketing – Marketing
+      Marketing
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Your creativity and attractive ideas lead you to create successful marketing campaigns that reflect the digital era.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your creativity helps you design campaigns for the digital age.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>25,000</span> to <span style='color:#28a745;font-weight:bold;'>50,000</span> British pounds annually.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Salaries start from <span style='color:#e68a00;font-weight:bold;'>£25,000</span> to <span style='color:#28a745;font-weight:bold;'>£50,000</span> per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Britain is the gateway to innovation in marketing, with prestigious universities and advanced curricula.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is a hub for marketing innovation and top universities.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      I see you as a famous marketing manager leading global impactful campaigns.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career Future</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a marketing manager leading global campaigns.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
@@ -562,7 +566,7 @@ const resultsData = {
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -572,39 +576,39 @@ const resultsData = {
 
   // إضافة التخصصات الجديدة
   "Procurement & Supply Management": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Ideal Major Based on Your Personality
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">🚚</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Procurement & Supply Management – Procurement & Supply Management
+      Procurement & Supply Management
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Your strong organizational skills qualify you to manage product flows and operations efficiently worldwide.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your organization skills help you manage global supply chains.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>28,000</span> to <span style='color:#28a745;font-weight:bold;'>65,000</span> British pounds annually.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Salaries start from <span style='color:#e68a00;font-weight:bold;'>£28,000</span> to <span style='color:#28a745;font-weight:bold;'>£65,000</span> per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      British universities offer advanced specialized programs in supply chain and procurement.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      UK universities offer advanced supply chain programs.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      I see you as a global supply chain manager for major companies worldwide.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career Future</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a global supply chain manager.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
@@ -612,7 +616,7 @@ const resultsData = {
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -621,39 +625,39 @@ const resultsData = {
 </div>`,
 
   "Law": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Ideal Major Based on Your Personality
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">⚖️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Law – Law
+      Law
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Your passion for justice and laws guides you to make a difference in people's lives and society.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your passion for justice helps you make a difference in society.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>28,000</span> to <span style='color:#28a745;font-weight:bold;'>140,000</span> British pounds annually, depending on experience and field.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Salaries start from <span style='color:#e68a00;font-weight:bold;'>£28,000</span> to <span style='color:#28a745;font-weight:bold;'>£140,000</span> per year, depending on experience.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Britain is renowned worldwide for its excellent law schools and wide range of training opportunities.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      UK law schools are world-renowned with great training.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      I see you as a famous lawyer or influential judge impacting justice and society.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career Future</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a lawyer or judge making real impact.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
@@ -661,7 +665,7 @@ const resultsData = {
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -671,39 +675,39 @@ const resultsData = {
 
   // تخصصات تقنية المعلومات
   "General Computing": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Ideal Major
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">💻</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      General Computing – General Computing
+      General Computing
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Your high technical skills qualify you to work in any technical field and develop smart solutions for various sectors.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your technical skills let you solve problems in any IT field.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>30,000</span> to <span style='color:#28a745;font-weight:bold;'>65,000</span> British pounds annually, depending on experience.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Salaries start from <span style='color:#e68a00;font-weight:bold;'>£30,000</span> to <span style='color:#28a745;font-weight:bold;'>£65,000</span> per year, depending on experience.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Britain, the global leader in technology, opens up learning and development opportunities in a professional environment.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers top computing programs and a tech-driven environment.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      The future awaits you as a tech expert or IT systems engineer in global tech companies.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career Future</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become an IT specialist in global tech companies.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
@@ -711,7 +715,7 @@ const resultsData = {
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -720,47 +724,47 @@ const resultsData = {
 </div>`,
 
   "Software Engineering": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Ideal Major
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">🧑‍💻</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Software Engineering – Software Engineering
+      Software Engineering
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Your creativity in building software and designing software solutions propels you towards leadership in this innovative field.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      You love building software and digital solutions.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Your salary starts from <span style='color:#e68a00;font-weight:bold;'>35,000</span> to <span style='color:#28a745;font-weight:bold;'>75,000</span> British pounds annually with experience accumulation.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Salaries start from <span style='color:#e68a00;font-weight:bold;'>£35,000</span> to <span style='color:#28a745;font-weight:bold;'>£75,000</span> per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Britain hosts the best software engineering colleges and provides you with a competitive and inspiring technical environment.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers top software engineering programs.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      We see you as a technical leader innovating applications and platforms used by millions of people worldwide.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career Future</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a tech leader creating global apps.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 Programming is the future of the digital world!
+    🌟 Programming is the future!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -769,47 +773,47 @@ const resultsData = {
 </div>`,
 
   "Applications Development & Testing": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">📱</span>
+    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">🛠️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Applications Development & Testing – Applications Development & Testing
+      General Engineering
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Your attention to detail and interest in quality make you a successful application developer and a leader in quality testing.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your innovative mind combines engineering fields to solve big challenges.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>32,000</span> to <span style='color:#28a745;font-weight:bold;'>68,000</span> British pounds annually with career progression.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £30,000 to £70,000 per year, increasing with experience.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      The UK provides you with an excellent educational experience and real-world training opportunities in the tech industry.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK has top engineering universities and great opportunities.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      We see you as a team leader for application development in leading global companies.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a project leader developing creative engineering solutions.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 Your applications build the future!
+    🌟 Your engineering shapes the future!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -818,47 +822,47 @@ const resultsData = {
 </div>`,
 
   "Data Analytics": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">📈</span>
+    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">🌐</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Data Analytics – Data Analytics
+      Network Engineering
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      You have a unique talent in turning data into strategic decisions that create success for organizations.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      You build and manage digital networks for the future.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>35,000</span> to <span style='color:#28a745;font-weight:bold;'>70,000</span> British pounds annually with experience.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £32,000 to £72,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      The UK is a global hub for data analytics and its advanced programs empower you to lead the digital transformation.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      UK universities offer top network engineering programs.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      We see you as a data analytics manager in large global organizations.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a network manager in major tech firms.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 Data is the power of the future in your hands!
+    🌟 You are the digital bridge!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -867,47 +871,47 @@ const resultsData = {
 </div>`,
 
   "Network Engineering": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">🌐</span>
+    <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">🛡️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Network Engineering – Network Engineering
+      Cyber Security
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Your passion for network technologies and building digital infrastructure makes you a leader in the communications world.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      You protect data and digital systems from threats.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>32,000</span> to <span style='color:#28a745;font-weight:bold;'>72,000</span> British pounds annually with career advancement.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £40,000 to £90,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Britain provides you with the best theoretical and practical experience in networking and modern digital technologies.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is a top destination for cyber security studies.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      We see you as a technical manager for networks in the largest communications companies worldwide.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a cyber security expert for global firms.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 You are the bridge between the digital world!
+    🌟 Be the guardian of the digital world!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -916,47 +920,47 @@ const resultsData = {
 </div>`,
 
   "Cyber Security": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">🛡️</span>
+    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">📱</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Cyber Security – Cyber Security
+      Applications Development & Testing
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      You have a unique talent in protecting data and digital systems from attacks and breaches.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      You care about quality and details in software.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Salaries start from <span style='color:#e68a00;font-weight:bold;'>40,000</span> to <span style='color:#28a745;font-weight:bold;'>90,000</span> British pounds annually and increase with excellence and experience.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £32,000 to £68,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Studying in Britain</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      Britain is the best destination for studying cyber security with accredited programs and an active job market.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      UK programs offer hands-on experience in app development.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your future</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      We see you as a cyber security expert protecting global companies from digital attacks and making a difference.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Lead app development teams in top companies.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 Be the guardian of the digital world!
+    🌟 Your apps build the future!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      Start your university journey now
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -966,47 +970,47 @@ const resultsData = {
 
   // تخصصات الهندسة
   "General Engineering": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    Your ideal major based on your personality
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">🛠️</span>
+    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">📈</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      General Engineering – General Engineering
+      Data Analytics
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
     <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تمتلك عقلًا هندسيًا مبتكرًا يجمع بين مختلف فروع الهندسة لتقديم حلول متكاملة وإبداعية للمشاريع الضخمة.
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      You turn data into smart decisions for success.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>30,000</span> إلى <span style='color:#28a745;font-weight:bold;'>70,000</span> جنيه إسترليني سنويًا، وتزيد مع الخبرة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £35,000 to £70,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تضم أفضل الجامعات الهندسية وتمنحك فرص تطوير استثنائية في بيئة علمية متقدمة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is a leader in data analytics education.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مهندسًا قائدًا يدير مشاريع عملاقة ويطور حلول هندسية مبتكرة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a data manager in global companies.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 هندستك تبني مستقبل العالم!
+    🌟 Data is your power!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1015,96 +1019,96 @@ const resultsData = {
 </div>`,
 
   "Manufacturing Engineering": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
-  </div>
-   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">🏭</span>
-   </div>
-   <div style="width:90%; margin-bottom:10px;">
-     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Manufacturing Engineering – هندسة التصنيع
-     </div>
-   </div>
-   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      شغفك بتطوير العمليات الصناعية وتحسين الإنتاجية يجعلك قائدًا في عالم التصنيع الحديث.
-     </div>
-   </div>
-   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>32,000</span> إلى <span style='color:#28a745;font-weight:bold;'>68,000</span> جنيه إسترليني سنويًا.
-     </div>
-   </div>
-   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا رائدة في الهندسة الصناعية وتوفر لك أحدث التقنيات والمعدات للتعلم.
-     </div>
-   </div>
-   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-     <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مديرًا للإنتاج في مصانع عالمية كبرى تطور منتجات تغير العالم.
-     </div>
-   </div>
-   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت محرك الصناعة والإنتاج!
-   </div>
-   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
-     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
-     </a>
-     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
-       isgateway.org
-     </div>
-   </div>
- </div>`,
-
-  "Mechatronics": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">🤖</span>
+    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">☁️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Mechatronics – الميكاترونكس
+      Cloud Networking
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      لديك شغف بدمج الميكانيكا والإلكترونيات لإنشاء أنظمة ذكية ومتطورة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your passion for cloud tech and networks drives digital transformation.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>35,000</span> إلى <span style='color:#28a745;font-weight:bold;'>72,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £38,000 to £75,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم أفضل برامج الميكاترونكس مع مختبرات متطورة وفرص عملية واسعة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK leads in cloud tech with advanced programs.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مطورًا للروبوتات والأنظمة الذكية في شركات التكنولوجيا الرائدة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a cloud expert managing global digital infrastructure.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت صانع الأنظمة الذكية!
+    🌟 You are the cloud of the digital future!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
+    </a>
+    <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
+      isgateway.org
+    </div>
+  </div>
+</div>`,
+
+  "Mechatronics": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
+  </div>
+  <div style="margin-top:16px; margin-bottom:6px;">
+    <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">🧠</span>
+  </div>
+  <div style="width:90%; margin-bottom:10px;">
+    <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
+      Artificial Intelligence
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      You love developing smart systems and AI solutions.
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £45,000 to £95,000 per year.
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is a global leader in AI education and research.
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become an AI expert shaping future technology.
+    </div>
+  </div>
+  <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
+    🌟 You are the mind of the digital future!
+  </div>
+  <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
+    <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1113,47 +1117,47 @@ const resultsData = {
 </div>`,
 
   "Mechanical": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">⚙️</span>
+    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">📡</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Mechanical Engineering – الهندسة الميكانيكية
+      Digital Communications Management
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      شغفك بفهم آلية عمل الأشياء وتطوير المحركات والآلات يجعلك خبيرًا في الهندسة الميكانيكية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your digital skills help lead modern communication strategies.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>30,000</span> إلى <span style='color:#28a745;font-weight:bold;'>65,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £28,000 to £55,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا مهد الثورة الصناعية وتضم أعرق الجامعات في الهندسة الميكانيكية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers advanced digital communications programs.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مهندسًا ميكانيكيًا يطور محركات السيارات أو أنظمة الطيران المتقدمة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a digital communications manager in global firms.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت محرك التقدم التقني!
+    🌟 You are the voice of the digital future!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1163,47 +1167,47 @@ const resultsData = {
 
   // تخصصات التقنيات الرقمية
   "Cloud Networking": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">☁️</span>
+    <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">🎨</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Cloud Networking – الشبكات السحابية
+      Graphic Design
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      شغفك بالتقنيات السحابية والشبكات المتقدمة يؤهلك لقيادة التحول الرقمي في الشركات.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your creativity shapes unique visual identities.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>38,000</span> إلى <span style='color:#28a745;font-weight:bold;'>75,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £22,000 to £45,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا رائدة في التقنيات السحابية وتوفر أحدث البرامج والمختبرات المتطورة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is a hub for creative arts and design.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك خبيرًا في الحوسبة السحابية يدير البنية التحتية الرقمية لشركات عالمية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a renowned designer for global brands.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت سحابة المستقبل الرقمي!
+    🌟 You are a visual identity artist!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1212,47 +1216,47 @@ const resultsData = {
 </div>`,
 
   "Artificial Intelligence (AI) Solutions and Applications": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">🧠</span>
+    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">📸</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Artificial Intelligence – الذكاء الاصطناعي
+      Photography
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      لديك شغف بتطوير الأنظمة الذكية وتطبيقات الذكاء الاصطناعي التي تغير العالم.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your artistic eye tells stories through images.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>45,000</span> إلى <span style='color:#28a745;font-weight:bold;'>95,000</span> جنيه إسترليني سنويًا مع فرص نمو استثنائية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £20,000 to £50,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا مركز عالمي للذكاء الاصطناعي وتضم أفضل الجامعات والمختبرات البحثية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers top photography programs and studios.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك خبيرًا في الذكاء الاصطناعي يطور حلول ذكية تشكل مستقبل التكنولوجيا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a professional photographer for global media or your own studio.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت عقل المستقبل الرقمي!
+    🌟 You tell stories through the lens!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1261,47 +1265,47 @@ const resultsData = {
 </div>`,
 
   "Digital Communications Management": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">📡</span>
+    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">👗</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Digital Communications Management – إدارة الاتصالات الرقمية
+      Fashion Design
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      مهاراتك في التواصل الرقمي وإدارة المحتوى تؤهلك لقيادة استراتيجيات الاتصال الحديثة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your style and passion for fashion let you create modern, elegant designs.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>28,000</span> إلى <span style='color:#28a745;font-weight:bold;'>55,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £18,000 to £60,000 per year, based on fame and success.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم أحدث برامج الاتصالات الرقمية مع فرص تطبيقية واسعة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is a global fashion capital with top design schools in London.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مديرًا للاتصالات الرقمية في شركات عالمية تدير علاقات الجمهور.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a global designer at major fashion weeks in London, Paris, and Milan.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت صوت المستقبل الرقمي!
+    🌟 You are the designer of tomorrow!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1311,47 +1315,47 @@ const resultsData = {
 
   // تخصصات الإعلام الإبداعي
   "Graphic Design": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">🎨</span>
+    <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">🎬</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Graphic Design – التصميم الجرافيكي
+      Film Production
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      إبداعك البصري وموهبتك في التصميم تجعلك قادرًا على إنشاء هويات بصرية مؤثرة ومميزة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your passion for cinema helps you tell stories visually and creatively.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>22,000</span> إلى <span style='color:#28a745;font-weight:bold;'>45,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £22,000 to £80,000 per year, depending on project success.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا مهد الإبداع والتصميم وتضم أفضل كليات الفنون والتصميم في العالم.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is home to world-class film schools and studios.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مصممًا جرافيكيًا مشهورًا يصمم للعلامات التجارية العالمية الكبرى.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become an award-winning director making films for millions.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت فنان الهويات البصرية!
+    🌟 You create cinematic dreams!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1360,47 +1364,47 @@ const resultsData = {
 </div>`,
 
   "Photography": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">📸</span>
+    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">✈️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Photography – التصوير الفوتوغرافي
+      Aviation Management
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      عينك الفنية ومهارتك في التقاط اللحظات المميزة تجعلك مصورًا محترفًا يحكي القصص بالصور.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your passion for aviation prepares you to lead airports and airlines.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>20,000</span> إلى <span style='color:#28a745;font-weight:bold;'>50,000</span> جنيه إسترليني سنويًا حسب التخصص.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £28,000 to £75,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم أفضل برامج التصوير مع استوديوهات متطورة وفرص عملية واسعة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers top aviation management programs and airport internships.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مصورًا محترفًا يعمل مع المجلات العالمية أو يدير استوديو تصوير خاص.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a manager at a major airport or global airline.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت راوي القصص بالعدسة!
+    🌟 You lead the skies!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1409,47 +1413,47 @@ const resultsData = {
 </div>`,
 
   "Fashion": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">👗</span>
+    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">🏨</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Fashion Design – تصميم الأزياء
+      Hospitality Management
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      ذوقك الرفيع وشغفك بالموضة يؤهلك لتصميم أزياء عصرية تعكس الأناقة والإبداع.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your love for service and guest experiences makes you a hospitality leader.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>18,000</span> إلى <span style='color:#28a745;font-weight:bold;'>60,000</span> جنيه إسترليني سنويًا حسب الشهرة والنجاح.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £24,000 to £55,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا عاصمة الموضة العالمية وتضم أشهر كليات تصميم الأزياء في لندن.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers top hospitality programs and internships at global hotels.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مصممًا عالميًا يعرض في أسابيع الموضة الكبرى في لندن وباريس وميلانو.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a general manager at a luxury hotel or resort.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت مصمم أناقة المستقبل!
+    🌟 You are a global hospitality ambassador!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1458,47 +1462,47 @@ const resultsData = {
 </div>`,
 
   "Film": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">🎬</span>
+    <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">💖</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Film Production – إنتاج الأفلام
+      Health & Social Care
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      شغفك بالسينما وقدرتك على إخراج القصص بصريًا يجعلك مخرجًا ومنتجًا سينمائيًا مبدعًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your kindness and desire to help others make you a caring professional.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>22,000</span> إلى <span style='color:#28a745;font-weight:bold;'>80,000</span> جنيه إسترليني سنويًا حسب نجاح الأعمال.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £22,000 to £45,000 per year, with extra benefits.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا موطن السينما العالمية وتضم أفضل مدارس السينما واستوديوهات الإنتاج.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers top health and social care programs with practical training.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مخرجًا سينمائيًا يصنع أفلامًا تحصد الجوائز العالمية وتؤثر في الملايين.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a care provider making a real difference in people's lives.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت صانع أحلام السينما!
+    🌟 You are an angel of care!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1508,47 +1512,47 @@ const resultsData = {
 
   // تخصصات السياحة والضيافة
   "Aviation": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">✈️</span>
+    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">🎮</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Aviation Management – إدارة الطيران
+      Esports Management
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      شغفك بالطيران وحلمك بالعمل في المطارات وشركات الطيران يؤهلك لقيادة هذا القطاع الحيوي.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your passion for gaming and competition lets you lead esports teams and tournaments.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>28,000</span> إلى <span style='color:#28a745;font-weight:bold;'>75,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £25,000 to £60,000 per year in a fast-growing industry.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تضم أفضل برامج إدارة الطيران مع فرص تدريبية في أكبر المطارات العالمية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers modern esports programs and advanced training facilities.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مديرًا في مطار دولي كبير أو شركة طيران عالمية تربط القارات.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a global esports team manager or major tournament organizer.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت قائد أجواء المستقبل!
+    🌟 You are a digital sports champion!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1557,47 +1561,47 @@ const resultsData = {
 </div>`,
 
   "Hospitality Management": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">🏨</span>
+    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">🔧</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Hospitality Management – إدارة الضيافة
+      Operations Engineering
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      حبك لخدمة الضيوف وتقديم تجارب استثنائية يجعلك قائدًا مميزًا في صناعة الضيافة والفندقة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      You improve efficiency and analyze processes for better production systems.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>24,000</span> إلى <span style='color:#28a745;font-weight:bold;'>55,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £33,000 to £70,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم أفضل برامج إدارة الضيافة مع فرص تدريبية في فنادق ومنتجعات عالمية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers advanced operations engineering programs with practical industry training.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مديرًا عامًا لفندق فاخر أو منتجع سياحي يستقبل نجوم العالم.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become an operations manager improving efficiency in global industries.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت سفير الضيافة العالمية!
+    🌟 You boost efficiency and productivity!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1606,47 +1610,47 @@ const resultsData = {
 </div>`,
 
   "Integrated Health & Social Care Practice": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">💖</span>
+    <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">⚡</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Health & Social Care – الصحة والرعاية الاجتماعية
+      Electrical & Electronic Engineering
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      قلبك الطيب ورغبتك في مساعدة الآخرين تجعلك مقدم رعاية صحية واجتماعية مميزًا ومؤثرًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your passion for circuits and electronics helps you create advanced tech solutions.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>22,000</span> إلى <span style='color:#28a745;font-weight:bold;'>45,000</span> جنيه إسترليني سنويًا مع مزايا إضافية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £32,000 to £75,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم أفضل برامج الرعاية الصحية مع تدريب عملي في مستشفيات ومراكز رعاية متطورة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK leads in electrical engineering with advanced labs and research.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مقدم رعاية صحية يغير حياة الناس ويساهم في تحسين جودة الحياة في المجتمع.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become an engineer developing renewable energy or advanced circuits.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت ملاك الرحمة والشفاء!
+    🌟 You power the world with electronics!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1655,47 +1659,47 @@ const resultsData = {
 </div>`,
 
   "Esports – General": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">🎮</span>
+    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">🏗️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Esports Management – إدارة الرياضات الإلكترونية
+      Civil Engineering
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      شغفك بالألعاب الإلكترونية وروح المنافسة تؤهلك لقيادة فرق وبطولات الرياضات الإلكترونية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your vision for building the future helps you design infrastructure and shape cities.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>25,000</span> إلى <span style='color:#28a745;font-weight:bold;'>60,000</span> جنيه إسترليني سنويًا في صناعة سريعة النمو.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £28,000 to £65,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم أحدث برامج الرياضات الإلكترونية مع مرافق تدريبية متطورة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK has top civil engineering universities and large-scale training projects.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مديرًا لفريق إيسبورتس عالمي أو منظمًا لبطولات دولية كبرى.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Design bridges, roads, and buildings serving millions.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت بطل الرياضة الرقمية!
+    🌟 You build the future of civilization!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1705,47 +1709,47 @@ const resultsData = {
 
   // المزيد من تخصصات الهندسة
   "Operations Engineering": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">🔧</span>
+    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">👷</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Operations Engineering – هندسة العمليات
+      Construction Management
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      قدرتك على تحسين الكفاءة وتحليل العمليات تجعلك خبيرًا في تطوير الأنظمة الإنتاجية والتشغيلية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your leadership and project skills prepare you to manage large construction sites.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>33,000</span> إلى <span style='color:#28a745;font-weight:bold;'>70,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £30,000 to £70,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم برامج متقدمة في هندسة العمليات مع تطبيق عملي في الصناعات الرائدة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers top construction management programs with global project training.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مديرًا للعمليات يحسن الكفاءة الإنتاجية في شركات صناعية عالمية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Lead major projects like skyscrapers and smart cities.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت محسن الكفاءة والإنتاجية!
+    🌟 You lead the projects of tomorrow!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1754,47 +1758,47 @@ const resultsData = {
 </div>`,
 
   "Electrical & Electronic Engineering": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#e68a00; text-shadow:0 4px 14px #f6b20c44;">⚡</span>
+    <span style="font-size:52px; color:#dc3545; text-shadow:0 4px 14px #dc354544;">🎬</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Electrical & Electronic Engineering – الهندسة الكهربائية والإلكترونية
+      Creative Media Production
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      شغفك بالدوائر الكهربائية والأنظمة الإلكترونية يؤهلك لتصميم حلول تقنية متطورة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your creativity in digital content makes you a standout media producer.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>32,000</span> إلى <span style='color:#28a745;font-weight:bold;'>75,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £22,000 to £55,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا رائدة في الهندسة الكهربائية وتوفر مختبرات متطورة وفرص بحثية متميزة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is home to major media companies and world-class studios.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مهندسًا كهربائيًا يطور أنظمة الطاقة المتجددة أو الدوائر المتكاملة المتقدمة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Produce inspiring content for audiences worldwide.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت مهندس الطاقة والإلكترونيات!
+    🌟 You inspire with your content!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1804,47 +1808,47 @@ const resultsData = {
 
   // تخصصات هندسة البناء والتشييد
   "Civil Engineering": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#0b6dc4; text-shadow:0 4px 14px #0b6dc444;">🏗️</span>
+    <span style="font-size:52px; color:#6f42c1; text-shadow:0 4px 14px #6f42c144;">📺</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Civil Engineering – الهندسة المدنية
+      Television Production
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      حلمك ببناء المستقبل وتصميم البنية التحتية يجعلك مهندسًا مدنيًا قادرًا على تشكيل المدن.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your love for visual media makes you an expert in TV program and series production.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>28,000</span> إلى <span style='color:#28a745;font-weight:bold;'>65,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £24,000 to £60,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تضم أعرق جامعات الهندسة المدنية وتوفر مشاريع تطبيقية ضخمة للتدريب.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is home to the BBC and top TV production companies with unique training.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مهندسًا مدنيًا يصمم الجسور والطرق والمباني التي تخدم الملايين.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Produce TV shows and series watched by millions.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت بناء حضارة المستقبل!
+    🌟 You are a star of TV production!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1853,47 +1857,47 @@ const resultsData = {
 </div>`,
 
   "Construction Management": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #0b6dc444;">👷</span>
+    <span style="font-size:52px; color:#17a2b8; text-shadow:0 4px 14px #17a2b844;">📰</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Construction Management – إدارة المشاريع الإنشائية
+      Journalism
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      مهاراتك القيادية وحبك لإدارة المشاريع يؤهلك لقيادة مواقع البناء والمشاريع الضخمة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your passion for news and writing helps you deliver the truth to the world.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>30,000</span> إلى <span style='color:#28a745;font-weight:bold;'>70,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £20,000 to £50,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم برامج متميزة في إدارة البناء مع فرص تدريبية في مشاريع عالمية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is home to top newspapers and offers real newsroom training.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مديرًا لمشاريع البناء الضخمة كناطحات السحاب والمدن الذكية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become an investigative reporter or editor at a leading newspaper.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت قائد مشاريع المستقبل!
+    🌟 You are the voice of truth!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1903,47 +1907,47 @@ const resultsData = {
 
   // المزيد من تخصصات الإعلام الإبداعي
   "Creative Media Production": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#dc3545; text-shadow:0 4px 14px #dc354544;">🎬</span>
+    <span style="font-size:52px; color:#fd7e14; text-shadow:0 4px 14px #fd7e1444;">🏠</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Creative Media Production – إنتاج الإعلام الإبداعي
+      Interior Design
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      إبداعك في صناعة المحتوى الرقمي والبصري يؤهلك لتكون منتجًا إعلاميًا متميزًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your eye for beauty and space lets you create stunning interiors.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>22,000</span> إلى <span style='color:#28a745;font-weight:bold;'>55,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £22,000 to £50,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا موطن أكبر شركات الإنتاج الإعلامي وتوفر استوديوهات ومعدات عالمية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK leads in interior design with workshops in top studios.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك منتجًا إعلاميًا يصنع محتوى يلهم ويؤثر في الملايين حول العالم.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Transform hotels and luxury homes into architectural masterpieces.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت صانع المحتوى الملهم!
+    🌟 You are an artist of beautiful spaces!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -1952,47 +1956,47 @@ const resultsData = {
 </div>`,
 
   "Television Production": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#6f42c1; text-shadow:0 4px 14px #6f42c144;">📺</span>
+    <span style="font-size:52px; color:#e83e8c; text-shadow:0 4px 14px #e83e8c44;">🎨</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Television Production – إنتاج تلفزيوني
+      Animation
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      حبك للإعلام المرئي والتلفزيون يجعلك خبيرًا في إنتاج البرامج والمسلسلات التلفزيونية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your drawing skills and love for characters make you a pro animator.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>24,000</span> إلى <span style='color:#28a745;font-weight:bold;'>60,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £25,000 to £60,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا موطن BBC وشركات الإنتاج التلفزيوني العالمية مع فرص تدريب استثنائية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is home to top animation studios and advanced techniques.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك منتجًا تلفزيونيًا يصنع البرامج والمسلسلات التي يتابعها الملايين.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Create characters that delight audiences in global films.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت نجم صناعة التلفزيون!
+    🌟 You are a wizard of animation!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2001,47 +2005,47 @@ const resultsData = {
 </div>`,
 
   "Journalism": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#17a2b8; text-shadow:0 4px 14px #17a2b844;">📰</span>
+    <span style="font-size:52px; color:#6f42c1; text-shadow:0 4px 14px #6f42c144;">🔬</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Journalism – الصحافة
+      Semiconductor Technologies
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      شغفك بالأخبار والكتابة وحب الاستطلاع يجعلك صحفيًا قادرًا على نقل الحقيقة للعالم.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your passion for advanced tech and electronics prepares you to be a future tech expert.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>20,000</span> إلى <span style='color:#28a745;font-weight:bold;'>50,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £35,000 to £80,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا موطن أعرق الصحف العالمية وتقدم تدريبًا عمليًا في غرف الأخبار الحقيقية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK leads in semiconductor research with advanced labs.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك صحفيًا استقصائيًا يكشف الحقائق أو محررًا في أكبر الصحف العالمية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Develop chips powering smartphones and computers.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت صوت الحقيقة والعدالة!
+    🌟 You engineer the technologies of tomorrow!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2051,47 +2055,47 @@ const resultsData = {
 
   // المزيد من تخصصات الفن والتصميم
   "Interior Design": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#fd7e14; text-shadow:0 4px 14px #fd7e1444;">🏠</span>
+    <span style="font-size:52px; color:#17a2b8; text-shadow:0 4px 14px #17a2b844;">🔧</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Interior Design – التصميم الداخلي
+      Embedded Electronic Systems
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      حسك الجمالي وقدرتك على تحويل المساحات إلى أماكن ساحرة يجعلك مصممًا داخليًا مبدعًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your love for programming and electronics makes you an expert in smart embedded systems.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>22,000</span> إلى <span style='color:#28a745;font-weight:bold;'>50,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £32,000 to £70,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا رائدة في التصميم الداخلي وتوفر ورش عمل في أشهر استوديوهات التصميم.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers advanced programs with modern projects in embedded systems.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مصممًا داخليًا يحول الفنادق والمنازل الفاخرة إلى تحف فنية معمارية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Develop smart systems for cars, IoT, and robotics.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت فنان المساحات الجميلة!
+    🌟 You build smart systems!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2100,47 +2104,47 @@ const resultsData = {
 </div>`,
 
   "Animation": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#e83e8c; text-shadow:0 4px 14px #e83e8c44;">🎨</span>
+    <span style="font-size:52px; color:#fd7e14; text-shadow:0 4px 14px #fd7e1444;">🏛️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Animation – الرسوم المتحركة
+      Architectural Technology
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      إبداعك في الرسم وحبك للشخصيات المتحركة يؤهلك لتكون رسام أنيمشن محترف.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      You blend architectural creativity with tech to design smart, sustainable buildings.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>25,000</span> إلى <span style='color:#28a745;font-weight:bold;'>60,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £28,000 to £60,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا موطن أشهر استوديوهات الأنيمشن العالمية وتقدم تقنيات متطورة في الرسوم المتحركة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers leading architectural tech programs with advanced applications.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك رسام أنيمشن يبدع الشخصيات التي تسعد الأطفال والكبار في أفلام عالمية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Design smart, sustainable buildings for the future.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت ساحر الرسوم المتحركة!
+    🌟 You design smart buildings!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2150,47 +2154,47 @@ const resultsData = {
 
   // المزيد من تخصصات الهندسة المتقدمة
   "Semiconductor Technologies": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#6f42c1; text-shadow:0 4px 14px #6f42c144;">🔬</span>
+    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #28a74544;">🌡️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Semiconductor Technologies – تقنيات أشباه الموصلات
+      Building Services Engineering (HVAC)
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      شغفك بالتكنولوجيا المتطورة وفهمك للإلكترونيات يؤهلك لتكون خبيرًا في تقنيات المستقبل.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your interest in heating and ventilation lets you design comfortable, energy-saving environments.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>35,000</span> إلى <span style='color:#28a745;font-weight:bold;'>80,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £30,000 to £65,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا رائدة في أبحاث أشباه الموصلات وتوفر مختبرات متطورة للغاية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK leads in sustainable building and advanced HVAC systems.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مهندسًا يطور الرقائق الإلكترونية التي تشغل الهواتف الذكية والحاسوب.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Design climate control systems for smart, sustainable buildings.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت مهندس تقنيات المستقبل!
+    🌟 You engineer comfort and sustainability!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2199,47 +2203,47 @@ const resultsData = {
 </div>`,
 
   "Embedded Electronic Systems": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#17a2b8; text-shadow:0 4px 14px #17a2b844;">🔧</span>
+    <span style="font-size:52px; color:#ffc107; text-shadow:0 4px 14px #ffc10744;">⚡</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Embedded Electronic Systems – الأنظمة الإلكترونية المدمجة
+      Building Services Engineering (Electrical)
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      حبك للبرمجة والإلكترونيات معًا يجعلك خبيرًا في تطوير الأنظمة الذكية المدمجة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your expertise in electrical systems lets you design smart building networks.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>32,000</span> إلى <span style='color:#28a745;font-weight:bold;'>70,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £31,000 to £68,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم برامج متقدمة في الأنظمة المدمجة مع مشاريع تطبيقية حديثة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers advanced programs in smart and sustainable building electrical systems.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مطورًا للأنظمة الذكية في السيارات وإنترنت الأشياء والروبوتات.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Design smart electrical systems for future cities.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت مطور الأنظمة الذكية!
+    🌟 You engineer smart energy!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2249,47 +2253,47 @@ const resultsData = {
 
   // تخصصات التكنولوجيا المعمارية والبناء
   "Architectural Technology": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#fd7e14; text-shadow:0 4px 14px #fd7e1444;">🏛️</span>
+    <span style="font-size:52px; color:#20c997; text-shadow:0 4px 14px #20c99744;">🗺️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Architectural Technology – التكنولوجيا المعمارية
+      Surveying
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      جمعك بين الإبداع المعماري والتقنيات الحديثة يؤهلك لتصميم مباني ذكية ومستدامة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your precision and love for geotech make you an expert in surveying and mapping.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>28,000</span> إلى <span style='color:#28a745;font-weight:bold;'>60,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £26,000 to £55,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم برامج رائدة في التكنولوجيا المعمارية مع تطبيقات عملية متقدمة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers advanced surveying and geomatics programs with modern tech.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك تقنيًا معماريًا يصمم المباني الذكية والمستدامة للمستقبل.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Use the latest tech to map cities and major projects.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت مصمم المباني الذكية!
+    🌟 You map the future!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2298,47 +2302,47 @@ const resultsData = {
 </div>`,
 
   "Building Services Engineering (HVAC)": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #28a74544;">🌡️</span>
+    <span style="font-size:52px; color:#007bff; text-shadow:0 4px 14px #007bff44;">✈️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Building Services Engineering (HVAC) – خدمات المباني – HVAC
+      Aviation
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      اهتمامك بأنظمة التدفئة والتهوية يؤهلك لتصميم بيئات مريحة وموفرة للطاقة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your passion for aviation and tech prepares you for a global career.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>30,000</span> إلى <span style='color:#28a745;font-weight:bold;'>65,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £35,000 to £80,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا رائدة في تقنيات المباني المستدامة وأنظمة HVAC المتطورة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is a global aviation hub with hands-on training at major airports.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مهندسًا يصمم أنظمة التحكم في المناخ للمباني الذكية والمستدامة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Work for top airlines or as a professional pilot.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت مهندس الراحة والاستدامة!
+    🌟 You soar to success!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2347,47 +2351,47 @@ const resultsData = {
 </div>`,
 
   "Building Services Engineering (Electrical)": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#ffc107; text-shadow:0 4px 14px #ffc10744;">⚡</span>
+    <span style="font-size:52px; color:#fd7e14; text-shadow:0 4px 14px #fd7e1444;">🏖️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Building Services Engineering (Electrical) – خدمات المباني – الكهرباء
+      Destination Management
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      خبرتك في الأنظمة الكهربائية تؤهلك لتصميم الشبكات الكهربائية الذكية للمباني.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your love for travel and management skills help you develop top tourist destinations.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>31,000</span> إلى <span style='color:#28a745;font-weight:bold;'>68,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £24,000 to £55,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم برامج متقدمة في الأنظمة الكهربائية للمباني الذكية والمستدامة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers top tourism management programs and internships at famous destinations.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مهندسًا كهربائيًا يصمم الأنظمة الكهربائية الذكية للمدن المستقبلية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Manage a world-class destination welcoming millions of visitors.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت مهندس الطاقة الذكية!
+    🌟 You create amazing travel experiences!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2397,47 +2401,47 @@ const resultsData = {
 
   // تخصصات إضافية
   "Surveying": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#20c997; text-shadow:0 4px 14px #20c99744;">🗺️</span>
+    <span style="font-size:52px; color:#e83e8c; text-shadow:0 4px 14px #e83e8c44;">🎉</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Surveying – المساحة
+      Events Management
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      دقتك في القياس وحبك للتكنولوجيا الجغرافية يؤهلك لتكون خبيرًا في المساحة والخرائط.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your creativity and love for events make you an expert organizer.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>26,000</span> إلى <span style='color:#28a745;font-weight:bold;'>55,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £22,000 to £50,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم برامج متقدمة في المساحة والجيوماتكس مع تقنيات حديثة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is home to major global events and offers practical conference and exhibition programs.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مساحًا يستخدم أحدث التقنيات لرسم خرائط المدن والمشاريع الكبرى.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Organize major international events, conferences, and festivals.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت رسام خرائط المستقبل!
+    🌟 You create beautiful memories!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2446,47 +2450,47 @@ const resultsData = {
 </div>`,
 
   "Aviation": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#007bff; text-shadow:0 4px 14px #007bff44;">✈️</span>
+    <span style="font-size:52px; color:#6f42c1; text-shadow:0 4px 14px #6f42c144;">🏛️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Aviation – الطيران
+      Innovation, Culture & Heritage
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      شغفك بالطيران والتكنولوجيا المتقدمة يؤهلك للعمل في صناعة الطيران العالمية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your passion for culture and creativity helps preserve heritage in innovative ways.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>35,000</span> إلى <span style='color:#28a745;font-weight:bold;'>80,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £23,000 to £48,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا موطن صناعة الطيران العالمية وتوفر تدريبًا عمليًا في المطارات الدولية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is home to top museums and heritage sites with leading heritage management programs.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك خبيرًا في الطيران يعمل مع أكبر شركات الطيران العالمية أو كطيار محترف.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Manage a world-class museum or preserve cultural heritage for future generations.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت محلق في سماء النجاح!
+    🌟 You are a guardian of culture!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2496,47 +2500,47 @@ const resultsData = {
 
   // المزيد من تخصصات السياحة
   "Destination Management": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#fd7e14; text-shadow:0 4px 14px #fd7e1444;">🏖️</span>
+    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #28a74544;">🌱</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Destination Management – إدارة الوجهات السياحية
+      Sustainable Management
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      حبك للسفر ومهاراتك الإدارية تؤهلك لتطوير وإدارة أجمل الوجهات السياحية في العالم.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your passion for sustainability leads organizations toward a greener future.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>24,000</span> إلى <span style='color:#28a745;font-weight:bold;'>55,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £26,000 to £58,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم برامج متميزة في إدارة السياحة مع فرص تدريب في أشهر الوجهات السياحية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK leads in sustainability with advanced environmental management programs.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مديرًا لوجهة سياحية عالمية تستقبل الملايين من الزوار سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a sustainability manager leading green transformation in industry.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت صانع التجارب السياحية المذهلة!
+    🌟 You are a leader for a greener future!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2545,47 +2549,47 @@ const resultsData = {
 </div>`,
 
   "Events": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#e83e8c; text-shadow:0 4px 14px #e83e8c44;">🎉</span>
+    <span style="font-size:52px; color:#17a2b8; text-shadow:0 4px 14px #17a2b844;">🗺️</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Events – تنظيم الفعاليات
+      Tour Operations
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      إبداعك في التنظيم وحبك للفعاليات يجعلك خبيرًا في تصميم وتنفيذ أروع المناسبات.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your love for travel and organization lets you create amazing travel experiences.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>22,000</span> إلى <span style='color:#28a745;font-weight:bold;'>50,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £23,000 to £52,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا موطن أكبر الفعاليات العالمية وتقدم برامج عملية في تنظيم المؤتمرات والمعارض.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers comprehensive tour operations programs with practical training at leading travel companies.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك منظمًا لأكبر الفعاليات العالمية كالمؤتمرات الدولية والحفلات الضخمة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Design unforgettable travel experiences for people worldwide.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت صانع الذكريات الجميلة!
+    🌟 You create travel adventures!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2594,47 +2598,47 @@ const resultsData = {
 </div>`,
 
   "Innovation, Culture & Heritage": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#6f42c1; text-shadow:0 4px 14px #6f42c144;">🏛️</span>
+    <span style="font-size:52px; color:#dc3545; text-shadow:0 4px 14px #dc354544;">🎨</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Innovation, Culture & Heritage – الابتكار والثقافة والتراث
+      Product Design
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      شغفك بالثقافة والتراث مع رؤيتك الإبداعية يؤهلك لحفظ التراث بطرق مبتكرة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your creativity and user focus help you design products that improve lives.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>23,000</span> إلى <span style='color:#28a745;font-weight:bold;'>48,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £25,000 to £55,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تضم أعرق المتاحف والمواقع التراثية وتقدم برامج رائدة في إدارة التراث.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is a leader in product design with workshops at top global companies.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مديرًا لمتحف عالمي أو خبيرًا في حفظ التراث الثقافي للأجيال القادمة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Design products for leading tech firms like Apple or Google.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت حارس التراث والثقافة!
+    🌟 You create the products of the future!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2644,47 +2648,47 @@ const resultsData = {
 
   // المزيد من التخصصات
   "Sustainable Management": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #28a74544;">🌱</span>
+    <span style="font-size:52px; color:#6f42c1; text-shadow:0 4px 14px #6f42c144;">🧵</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Sustainable Management – الإدارة المستدامة
+      Textiles
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      اهتمامك بالبيئة والاستدامة يؤهلك لقيادة المؤسسات نحو مستقبل أخضر ومستدام.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your creativity and love of fabrics and color make you an expert in textile design and production.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>26,000</span> إلى <span style='color:#28a745;font-weight:bold;'>58,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £22,000 to £48,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا رائدة في الاستدامة وتقدم برامج متقدمة في الإدارة البيئية المستدامة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers advanced textile design programs with modern, sustainable techniques.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مديرًا للاستدامة في شركة عالمية تقود التحول الأخضر في الصناعة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a textile designer creating sustainable and smart fabrics for the future.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت قائد المستقبل الأخضر!
+    🌟 You are an artist of fabrics and color!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2693,47 +2697,47 @@ const resultsData = {
 </div>`,
 
   "Tour Operations": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#17a2b8; text-shadow:0 4px 14px #17a2b844;">🗺️</span>
+    <span style="font-size:52px; color:#007bff; text-shadow:0 4px 14px #007bff44;">💻</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Tour Operations – تنظيم الرحلات السياحية
+      Digital Design
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      شغفك بالسفر ومهاراتك التنظيمية تؤهلك لتصميم أجمل الرحلات السياحية في العالم.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your digital creativity and technical skills help you design amazing, innovative experiences.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>23,000</span> إلى <span style='color:#28a745;font-weight:bold;'>52,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £26,000 to £58,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم برامج شاملة في تنظيم الرحلات مع تدريب عملي في شركات السياحة الرائدة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK leads in digital design, offering advanced UX/UI and interactive design programs.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك منظمًا للرحلات السياحية يصمم تجارب لا تُنسى للمسافرين حول العالم.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a digital designer creating apps and websites used by millions.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت مصمم المغامرات السياحية!
+    🌟 You create digital experiences!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2743,47 +2747,47 @@ const resultsData = {
 
   // المزيد من تخصصات الفن والتصميم
   "Product Design": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#dc3545; text-shadow:0 4px 14px #dc354544;">🎨</span>
+    <span style="font-size:52px; color:#e83e8c; text-shadow:0 4px 14px #e83e8c44;">🎭</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Product Design – تصميم المنتجات
+      Arts Practice
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      إبداعك في التصميم وفهمك لاحتياجات المستخدمين يؤهلك لتصميم منتجات تغير حياة الناس.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your artistic talent lets you express beauty and emotion through color and form.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>25,000</span> إلى <span style='color:#28a745;font-weight:bold;'>55,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £20,000 to £45,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا رائدة في تصميم المنتجات وتوفر ورش عمل مع أشهر الشركات العالمية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is home to great artists, famous galleries, and top academies.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مصممًا للمنتجات في شركات التكنولوجيا الكبرى كـ Apple أو Google.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Exhibit your art in world-class galleries and inspire generations.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت مبدع المنتجات المستقبلية!
+    🌟 You paint the beauty of life!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2792,47 +2796,47 @@ const resultsData = {
 </div>`,
 
   "Textiles": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#6f42c1; text-shadow:0 4px 14px #6f42c144;">🧵</span>
+    <span style="font-size:52px; color:#fd7e14; text-shadow:0 4px 14px #fd7e1444;">👠</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Textiles – النسيج
+      Footwear Design
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      إبداعك في التصميم وحبك للأقمشة والألوان يؤهلك لتكون خبيرًا في تصميم وإنتاج النسيج.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your creativity and passion for fashion help you design stylish, comfortable footwear.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>22,000</span> إلى <span style='color:#28a745;font-weight:bold;'>48,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £23,000 to £52,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم برامج متقدمة في تصميم النسيج مع تقنيات حديثة ومستدامة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers specialized footwear design programs with workshops at top brands.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مصممًا للنسيج يبدع في الأقمشة المستدامة والذكية للمستقبل.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Design for global brands or launch your own footwear label.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت فنان الأقمشة والألوان!
+    🌟 You create modern footwear!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2841,47 +2845,47 @@ const resultsData = {
 </div>`,
 
   "Digital Design": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#007bff; text-shadow:0 4px 14px #007bff44;">💻</span>
+    <span style="font-size:52px; color:#20c997; text-shadow:0 4px 14px #20c99744;">🎵</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Digital Design – التصميم الرقمي
+      Sound Media
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      إبداعك الرقمي ومهاراتك التقنية تؤهلك لتصميم تجارب رقمية مذهلة ومبتكرة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your musical sense and technical skills help you produce creative sound content.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>26,000</span> إلى <span style='color:#28a745;font-weight:bold;'>58,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £24,000 to £55,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا رائدة في التصميم الرقمي وتقدم برامج متطورة في UX/UI والتصميم التفاعلي.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is home to top sound studios and advanced audio production techniques.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مصممًا رقميًا يبدع في التطبيقات والمواقع التي يستخدمها الملايين يوميًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a sound producer for leading music and media companies.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت مبدع التجارب الرقمية!
+    🌟 You are a wizard of sound and music!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2891,47 +2895,47 @@ const resultsData = {
 
   // التخصصات الأخيرة المتبقية
   "Arts Practice": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#e83e8c; text-shadow:0 4px 14px #e83e8c44;">🎭</span>
+    <span style="font-size:52px; color:#6f42c1; text-shadow:0 4px 14px #6f42c144;">✨</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Arts Practice – الفنون التشكيلية
+      Visual Effects
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      موهبتك الفنية وإبداعك التشكيلي يؤهلك لتكون فنانًا يعبر عن الجمال والمشاعر بالألوان والأشكال.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your creativity and tech skills let you create amazing worlds in film and games.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>20,000</span> إلى <span style='color:#28a745;font-weight:bold;'>45,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £28,000 to £65,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا موطن أعظم الفنانين وتضم أشهر المعارض الفنية والأكاديميات المرموقة عالميًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is home to top VFX studios and advanced CGI technology.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك فنانًا تشكيليًا تعرض أعمالك في أشهر المعارض العالمية وتلهم الأجيال.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a VFX expert in Hollywood films and global games.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت فنان يرسم الجمال!
+    🌟 You are a visual effects wizard!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2940,47 +2944,47 @@ const resultsData = {
 </div>`,
 
   "Footwear Design": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#fd7e14; text-shadow:0 4px 14px #fd7e1444;">👠</span>
+    <span style="font-size:52px; color:#007bff; text-shadow:0 4px 14px #007bff44;">🎮</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Footwear Design – تصميم الأحذية
+      Game Development
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      إبداعك في التصميم وشغفك بالموضة يؤهلك لتصميم أحذية عصرية ومريحة تجمع بين الجمال والوظيفة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your passion and coding skills let you create games enjoyed by millions.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>23,000</span> إلى <span style='color:#28a745;font-weight:bold;'>52,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £30,000 to £70,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم برامج متخصصة في تصميم الأحذية مع ورش عمل في أشهر العلامات التجارية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is home to leading game studios and advanced programs.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مصممًا للأحذية في علامات تجارية عالمية أو تؤسس علامتك التجارية الخاصة.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Work at top studios or start your own game company.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت مبدع الأحذية العصرية!
+    🌟 You create gaming worlds!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -2989,47 +2993,47 @@ const resultsData = {
 </div>`,
 
   "Sound Media": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#20c997; text-shadow:0 4px 14px #20c99744;">🎵</span>
+    <span style="font-size:52px; color:#dc3545; text-shadow:0 4px 14px #dc354544;">🎬</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Sound Media – الوسائط الصوتية
+      Motion Graphic
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      حسك الموسيقي ومهاراتك التقنية تؤهلك لإنتاج وتصميم المحتوى الصوتي المبدع.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your creativity in design and animation lets you create stunning motion graphics.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>24,000</span> إلى <span style='color:#28a745;font-weight:bold;'>55,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £26,000 to £58,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا موطن أشهر الاستوديوهات الصوتية وتقدم تقنيات متطورة في الإنتاج الصوتي.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers the latest animation technologies and top studios.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك منتجًا صوتيًا يعمل مع أكبر شركات الموسيقى والإعلام في العالم.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Work as a motion designer in leading ad and production companies.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت ساحر الأصوات والموسيقى!
+    🌟 You bring creativity to motion!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -3038,47 +3042,47 @@ const resultsData = {
 </div>`,
 
   "Visual Effects": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#6f42c1; text-shadow:0 4px 14px #6f42c144;">✨</span>
+    <span style="font-size:52px; color:#ffc107; text-shadow:0 4px 14px #ffc10744;">📸</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Visual Effects – المؤثرات البصرية
+      Media Photography
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      إبداعك البصري ومهاراتك التقنية تؤهلك لخلق عوالم خيالية مذهلة في الأفلام والألعاب.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your talent and artistic eye capture powerful stories through images.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>28,000</span> إلى <span style='color:#28a745;font-weight:bold;'>65,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £22,000 to £48,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا موطن أشهر استوديوهات المؤثرات البصرية وتقدم تقنيات حديثة في CGI والـ VFX.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK is home to top photojournalists and specialized programs.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك خبيرًا في المؤثرات البصرية تعمل في أفلام هوليوود والألعاب العالمية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a media photographer documenting world events.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت ساحر المؤثرات البصرية!
+    🌟 You tell stories with images!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -3087,47 +3091,47 @@ const resultsData = {
 </div>`,
 
   "Game Development": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#007bff; text-shadow:0 4px 14px #007bff44;">🎮</span>
+    <span style="font-size:52px; color:#17a2b8; text-shadow:0 4px 14px #17a2b844;">📊</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Game Development – تطوير الألعاب
+      Business Analytics & Change Management
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      شغفك بالألعاب ومهاراتك البرمجية تؤهلك لتطوير ألعاب مذهلة تسلي الملايين حول العالم.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your analytical and strategic thinking helps lead change in big companies.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>30,000</span> إلى <span style='color:#28a745;font-weight:bold;'>70,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £35,000 to £75,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا موطن أشهر استوديوهات الألعاب وتقدم برامج متطورة في تطوير الألعاب.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK teaches the latest analytics and change management for top firms.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مطورًا للألعاب في استوديوهات عالمية أو تؤسس استوديو الألعاب الخاص بك.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Become a strategic analyst or change manager at global companies.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت مبدع عوالم الألعاب!
+    🌟 You lead transformation!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -3136,194 +3140,193 @@ const resultsData = {
 </div>`,
 
   "Motion Graphic": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
-  </div>
-  <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#dc3545; text-shadow:0 4px 14px #dc354544;">🎬</span>
-  </div>
-  <div style="width:90%; margin-bottom:10px;">
-    <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Motion Graphic – الرسوم المتحركة
-    </div>
-  </div>
-  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      إبداعك البصري وحبك للحركة والتصميم يؤهلك لإنتاج رسوم متحركة مذهلة للإعلانات والأفلام.
-    </div>
-  </div>
-  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>26,000</span> إلى <span style='color:#28a745;font-weight:bold;'>58,000</span> جنيه إسترليني سنويًا.
-    </div>
-  </div>
-  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم أحدث تقنيات الرسوم المتحركة وتضم أشهر استوديوهات الإنتاج.
-    </div>
-  </div>
-  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مصممًا للرسوم المتحركة في شركات الإعلان والإنتاج الكبرى عالميًا.
-    </div>
-  </div>
-  <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت ساحر الحركة والإبداع!
-  </div>
-  <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
-    <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
-    </a>
-    <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
-      isgateway.org
-    </div>
-  </div>
-</div>`,
-
-  "Media Photography": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
-  </div>
-  <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#ffc107; text-shadow:0 4px 14px #ffc10744;">📸</span>
-  </div>
-  <div style="width:90%; margin-bottom:10px;">
-    <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Media Photography – التصوير الإعلامي
-    </div>
-  </div>
-  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      موهبتك في التصوير وحسك الفني يؤهلك لتوثيق الأحداث والقصص بصور معبرة ومؤثرة.
-    </div>
-  </div>
-  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>22,000</span> إلى <span style='color:#28a745;font-weight:bold;'>48,000</span> جنيه إسترليني سنويًا.
-    </div>
-  </div>
-  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا موطن أشهر المصورين الصحفيين وتقدم برامج متخصصة في التصوير الإعلامي.
-    </div>
-  </div>
-  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مصورًا صحفيًا أو إعلاميًا يوثق الأحداث المهمة للعالم.
-    </div>
-  </div>
-  <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت راوي القصص بالصور!
-  </div>
-  <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
-    <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
-    </a>
-    <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
-      isgateway.org
-    </div>
-  </div>
-</div>`,
-
-  "Business Analytics and Change Management": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
-  </div>
-  <div style="margin-top:16px; margin-bottom:6px;">
-    <span style="font-size:52px; color:#17a2b8; text-shadow:0 4px 14px #17a2b844;">📊</span>
-  </div>
-  <div style="width:90%; margin-bottom:10px;">
-    <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Business Analytics & Change Management – تحليل الأعمال وإدارة التغيير
-    </div>
-  </div>
-  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      قدرتك على التحليل والتفكير الاستراتيجي تؤهلك لقيادة التغيير في الشركات الكبرى.
-    </div>
-  </div>
-  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>35,000</span> إلى <span style='color:#28a745;font-weight:bold;'>75,000</span> جنيه إسترليني سنويًا.
-    </div>
-  </div>
-  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم أحدث منهجيات التحليل وإدارة التغيير في كبرى الشركات العالمية.
-    </div>
-  </div>
-  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك محللًا استراتيجيًا أو مديرًا للتغيير في الشركات متعددة الجنسيات.
-    </div>
-  </div>
-  <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت قائد التحول والتطوير!
-  </div>
-  <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
-    <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
-    </a>
-    <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
-      isgateway.org
-    </div>
-  </div>
-</div>`,
-
-  "Software Development and Programming": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
-  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
-    تخصصك المثالي حسب شخصيتك
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.1em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;text-align:center;">
+    Your Major Match
   </div>
   <div style="margin-top:16px; margin-bottom:6px;">
     <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #28a74544;">💻</span>
   </div>
   <div style="width:90%; margin-bottom:10px;">
     <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
-      Software Development & Programming – تطوير البرمجيات والبرمجة
+      Software Development & Programming
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 لماذا هذا التخصص؟</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      مهاراتك التقنية وشغفك بحل المشكلات يؤهلك لبناء تطبيقات وأنظمة تخدم الملايين.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why this major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Your tech skills and problem-solving let you build apps and systems for millions.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 الراتب المتوقع</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      تبدأ الرواتب من <span style='color:#e68a00;font-weight:bold;'>32,000</span> إلى <span style='color:#28a745;font-weight:bold;'>80,000</span> جنيه إسترليني سنويًا.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      £32,000 to £80,000 per year.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 الدراسة في بريطانيا</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      بريطانيا تقدم أحدث تقنيات البرمجة وتضم أشهر شركات التكنولوجيا العالمية.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🎓 Study in the UK</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      The UK offers the latest in programming and is home to top tech firms.
     </div>
   </div>
   <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
-    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 مستقبلك المهني</div>
-    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
-      نراك مطورًا في شركات التكنولوجيا الكبرى أو تؤسس شركة التقنية الخاصة بك.
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Career</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.5; text-align:left;">
+      Work at top tech companies or start your own software business.
     </div>
   </div>
   <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
-    🌟 أنت بناء المستقبل الرقمي!
+    🌟 You build the digital future!
   </div>
   <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
     <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
-      ابدأ رحلتك الجامعية الآن
+      Start Your University Journey Now
+    </a>
+    <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
+      isgateway.org
+    </div>
+  </div>
+</div>`,
+"Media Photography": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
+    Your Perfect Major Based on Your Personality
+  </div>
+  <div style="margin-top:16px; margin-bottom:6px;">
+    <span style="font-size:52px; color:#ffc107; text-shadow:0 4px 14px #ffc10744;">📸</span>
+  </div>
+  <div style="width:90%; margin-bottom:10px;">
+    <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
+      Media Photography – Media Photography
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why This Major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      Your talent in photography and artistic sense qualifies you to document events and stories with expressive and impactful images.
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      Salaries start from <span style='color:#e68a00;font-weight:bold;'>22,000</span> to <span style='color:#28a745;font-weight:bold;'>48,000</span> British pounds annually.
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">�� Study in Britain</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      Britain is home to the most famous photojournalists and offers specialized programs in media photography.
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Professional Future</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      We see you as a photojournalist or media photographer documenting important events for the world.
+    </div>
+  </div>
+  <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
+    🌟 You are the storyteller through images!
+  </div>
+  <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
+    <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
+      Start Your University Journey Now
+    </a>
+    <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
+      isgateway.org
+    </div>
+  </div>
+</div>`,
+
+"Business Analytics and Change Management": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
+    Your Perfect Major Based on Your Personality
+  </div>
+  <div style="margin-top:16px; margin-bottom:6px;">
+    <span style="font-size:52px; color:#17a2b8; text-shadow:0 4px 14px #17a2b844;">📊</span>
+  </div>
+  <div style="width:90%; margin-bottom:10px;">
+    <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
+      Business Analytics & Change Management – Business Analysis and Change Management
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why This Major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      Your ability to analyze and think strategically qualifies you to lead change in major companies.
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      Salaries start from <span style='color:#e68a00;font-weight:bold;'>35,000</span> to <span style='color:#28a745;font-weight:bold;'>75,000</span> British pounds annually.
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">�� Study in Britain</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      Britain offers the latest methodologies in analysis and change management in major global companies.
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Professional Future</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      We see you as a strategic analyst or change manager in multinational companies.
+    </div>
+  </div>
+  <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
+    🌟 You are the leader of transformation and development!
+  </div>
+  <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
+    <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
+      Start Your University Journey Now
+    </a>
+    <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
+      isgateway.org
+    </div>
+  </div>
+</div>`,
+
+"Software Development and Programming": `<div style="width:360px;height:670px;margin:auto;background:linear-gradient(180deg,#ffffff 70%, #f3f7fa 100%);border-radius:36px;box-shadow:0 12px 40px #0b6dc455;border:4px solid #f6b20c;display:flex;flex-direction:column;align-items:center;padding:0;font-family:'Cairo', Arial, sans-serif;position:relative;overflow:hidden;">
+  <div style="width:100%; height:54px;background:linear-gradient(90deg,#f6b20c,#ffe28d);color:#fff; font-size:1.3em; font-weight:900;display:flex; align-items:center; justify-content:center;border-radius:36px 36px 0 0;letter-spacing:1.1px;">
+    Your Perfect Major Based on Your Personality
+  </div>
+  <div style="margin-top:16px; margin-bottom:6px;">
+    <span style="font-size:52px; color:#28a745; text-shadow:0 4px 14px #28a74544;">💻</span>
+  </div>
+  <div style="width:90%; margin-bottom:10px;">
+    <div style="color:#0b6dc4; font-size:1em; font-weight:600; text-align:center;">
+      Software Development & Programming – Software Development and Programming
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🧩 Why This Major?</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      Your technical skills and passion for problem-solving qualify you to build applications and systems that serve millions.
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">💰 Expected Salary</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      Salaries start from <span style='color:#e68a00;font-weight:bold;'>32,000</span> to <span style='color:#28a745;font-weight:bold;'>80,000</span> British pounds annually.
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">�� Study in Britain</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      Britain offers the latest programming technologies and hosts the most famous global technology companies.
+    </div>
+  </div>
+  <div style="width:90%; margin-bottom:7px; background:#f9f9fc; padding:7px 12px; border-radius:14px;">
+    <div style="color:#444; font-size:1.03em; font-weight:800; margin-bottom:2px; text-align:center;">🚀 Your Professional Future</div>
+    <div style="color:#2b3e54; font-size:0.93em; line-height:1.6; text-align:right;">
+      We see you as a developer in major technology companies or founding your own tech company.
+    </div>
+  </div>
+  <div style="color:#0b6dc4; font-size:1.04em; font-weight:800; text-align:center; margin:10px 0 2px 0;">
+    🌟 You are building the digital future!
+  </div>
+  <div style="margin-top:2px; margin-bottom:5px; display:flex; flex-direction:column; align-items:center;">
+    <a href="#" onclick="showStudyCalculator(); return false;" style="text-decoration:none; background:#f6b20c; padding:8px 16px; color:white; font-weight:800; border-radius:22px; font-size:0.92em; box-shadow:0 2px 8px #f6b20c88;">
+      Start Your University Journey Now
     </a>
     <div style="font-size:0.75em; color:#666; margin-top:4px; letter-spacing:0.3px;">
       isgateway.org
@@ -3388,14 +3391,13 @@ function renderStage1() {
   }
 
   setProgress(Math.floor((qIndex / questionsP1.length) * 100));
-
-  let html = `
-    <div class="main-question">${question}</div>
-    <div class="stage-label">Step 1</div>
-    ${qIndex === 3 ? '<div class="note">ملاحظة: اختر خيار واحد فقط بكلمة "نعم" وهو الأقرب إليك</div>' : ""}
-    <div id="optionsArea"></div>
-    <button class="btn-main" onclick="submitStage1Q()" id="nextBtn" disabled>التالي</button>
-  `;
+let html = `
+  <div class="main-question">${question}</div>
+  <div class="stage-label">Step 1</div>
+  ${qIndex === 3 ? '<div class="note">Note: Select only one option with "Yes"—choose the one that fits you best.</div>' : ""}
+  <div id="optionsArea"></div>
+  <button class="btn-main" onclick="submitStage1Q()" id="nextBtn" disabled>Next</button>
+`;
   document.getElementById('quizContent').innerHTML = html;
   renderOptions(options, qIndex);
 }
@@ -3463,21 +3465,21 @@ function submitStage1Q() {
     if (ans.answer === "Yes") yesArr.push(quizState.reducedIndexes[i]);
   });
 
-  // إذا كنا في آخر سؤال (الرابع)
-  if (qIndex === 3) {
-    if (yesArr.length === 1) {
-      quizState.mainFinalField = mainOptions[yesArr[0]].field;
-      quizState.currentStage = 2;
-      setProgress(90);
-      renderQuiz();
-      return;
-    } else {
-      // هنا فقط نعرض رسالة نصية في الصفحة، لا alert ولا مربع حوار.
-      let note = document.querySelector('.note');
-      if (note) note.innerHTML = 'يرجى اختيار خيار واحد فقط يحتوي على كلمة "نعم" لمتابعة الاختبار.';
-      return;
-    }
+// If we are at the last question (the fourth one)
+if (qIndex === 3) {
+  if (yesArr.length === 1) {
+    quizState.mainFinalField = mainOptions[yesArr[0]].field;
+    quizState.currentStage = 2;
+    setProgress(90);
+    renderQuiz();
+    return;
+  } else {
+    // Here, we only display a text message on the page, no alert or dialog box.
+    let note = document.querySelector('.note');
+    if (note) note.innerHTML = 'Please select only one option that contains the word "Yes" to continue the quiz.';
+    return;
   }
+}
 
   // في الأسئلة الأولى (0-2): إذا كان هناك أكثر من خيار "نعم"، قلّص الخيارات وانتقل للسؤال التالي
   if (qIndex < 3 && yesArr.length > 1) {
@@ -3498,10 +3500,11 @@ function submitStage1Q() {
 
   // إذا لم تتحقق أي حالة أعلاه، لا تفعل شيء (لن يتم تفعيل زر التالي أساسًا)
 }
+
 function renderStage2() {
   let data = subFieldsData[quizState.mainFinalField];
   if (!data) {
-    quizState.result = "حصل خطأ، لم يتم العثور على مجال التخصص!";
+    quizState.result = "An error occurred, the specialization field was not found!";
     quizState.currentStage = 3;
     renderQuiz();
     return;
@@ -3543,44 +3546,45 @@ function submitStage2() {
 function renderResult() {
   setProgress(100);
   let major = quizState.finalMajor;
-  let cardHTML = resultsData[major] || `<div style="text-align:center;padding:20px;">تم اختيار التخصص: ${major || "—"}. لم يتم العثور على بطاقة مخصصة بعد.</div>`;
+  let cardHTML = resultsData[major] || `<div style="text-align:center;padding:20px;">Selected major: ${major || "—"}. No dedicated card found yet.</div>`;
 
-  // إذا لم يدخل البريد بعد، أظهر نموذج البريد
+  // If the email has not been entered yet, show the email form
   if (!quizState.userEmail) {
     document.getElementById('quizContent').innerHTML = `
-      <h2>نتيجتك بانتظارك!</h2>
+      <h2>Your result is waiting!</h2>
       <div class="result-section">
-        الرجاء إدخال بريدك الإلكتروني لعرض النتيجة.
+        Please enter your email to view the result.
         <br><br>
         <input type="email" id="emailInput" placeholder="example@email.com" style="width:95%;padding:8px;font-size:1em;margin:10px 0;border-radius:6px;border:1px solid #ccc;text-align:left;direction:ltr;">
-        <button class="btn-main" onclick="submitEmail()">عرض النتيجة</button>
+        <button class="btn-main" onclick="submitEmail()">View Result</button>
       </div>
     `;
     return;
   }
 
-  // إذا أدخل البريد بالفعل، أظهر النتيجة
+  // If the email has already been entered, show the result
   document.getElementById('quizContent').innerHTML = `
-    <h2>نتيجتك النهائية</h2>
+    <h2>Your Final Result</h2>
     <div class="result-section">
       ${cardHTML}
     </div>
     <div class="share-btns">
-      <button onclick="shareResult()">مشاركة نتيجتي</button>
+      <button onclick="shareResult()">Share My Result</button>
     </div>
   `;
 } 
 function submitEmail() {
   let email = document.getElementById('emailInput').value.trim();
   if (!email || !validateEmail(email)) {
-    alert("يرجى إدخال بريد إلكتروني صحيح");
+    alert("Please enter a valid email address");
     return;
   }
   quizState.userEmail = email;
-  // إرسال البريد ونتيجته إلى جوجل شيت
+  // Send the email and result to Google Sheet
   sendEmailToSheet(email, quizState.finalMajor);
   renderResult();
 }
+
 
 function validateEmail(email) {
   // تحقق بسيط من صحة البريد
@@ -3598,17 +3602,18 @@ function sendEmailToSheet(email, result) {
     body: formData
   });
 }
+
 function shareResult() {
   let major = quizState.finalMajor;
-  let text = `تخصصي الأنسب هو: ${major} 🌟\nاختبر تخصصك على موقع isgateway.org`;
+  let text = `My most suitable major is: ${major} 🌟\nTest your major at isgateway.org`;
   if (navigator.share) {
-    navigator.share({ title: "اختبار التخصص الجامعي", text: text });
+    navigator.share({ title: "University Major Quiz", text: text });
   } else {
-    prompt("انسخ نتيجتك وشاركها مع أصدقائك:", text);
+    prompt("Copy your result and share it with your friends:", text);
   }
 }
 
-// بدء الاختبار
+// Start the quiz
 renderQuiz();
 
 // ========== Study Calculator Functions ==========
